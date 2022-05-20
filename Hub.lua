@@ -62,7 +62,7 @@ if game.PlaceId ~= 9049840490 then
             FlyActived = false
         end
     end)
-    FlySection:NewSlider("Fly Speed", "", 500, 100, function(s)
+    FlySection:NewSlider("Fly Speed", "", 5000, 100, function(s)
         FlySpeed = s
     end)
     FlySection:NewKeybind("Fly Keybind", "", FlyKey, function()
@@ -417,7 +417,7 @@ elseif game.PlaceId == 9049840490 then
     function AutoBuy()
         if not autoBuy then return end
         if autoBuy then
-            while wait(1) do
+            while wait(0.1) do
                 if not autoBuy then break end
                 if ChangeVM then ChangeVM = false break end
                 game:GetService("ReplicatedStorage").Knit.Services.VendorService.RF.EggPurchased:InvokeServer(CurrentVM)
@@ -434,7 +434,8 @@ elseif game.PlaceId == 9049840490 then
         "EmeraldHill1",
         "EmeraldHill2",
         "SnowValley1",
-        "SnowValley2",}
+        "HillTop1",
+        "HillTop2",}
 
     VMSection:NewDropdown("Select vending machine to buy", "", VendingMachines, function(co)
         if SelectedVM then
