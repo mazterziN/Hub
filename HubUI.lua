@@ -47,11 +47,11 @@ function Utility:TweenObject(obj, properties, duration, ...)
 end
 
 local theme = {
-    SchemeColor = Color3.fromRGB(4, 138, 1),
-    Background = Color3.fromRGB(36, 43, 36),
-    Header = Color3.fromRGB(28, 34, 29),
+    SchemeColor = Color3.fromRGB(50,50,50),
+    Background = Color3.fromRGB(20,20,20),
+    Header = Color3.fromRGB(0,0,0),
     TextColor = Color3.fromRGB(255,255,255),
-    ElementColor = Color3.fromRGB(23, 31, 25)
+    ElementColor = Color3.fromRGB(10, 10, 10)
 }
 local oldTheme = ""
 
@@ -2269,6 +2269,7 @@ function Kavo.CreateLib(kavName)
             	label.Name = "label"
             	label.Parent = sectionInners
             	label.BackgroundColor3 = theme.SchemeColor
+		label.BackgroundTransparency = 1
             	label.BorderSizePixel = 0
 				label.ClipsDescendants = true
             	label.Text = title
