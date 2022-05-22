@@ -47,11 +47,11 @@ function Utility:TweenObject(obj, properties, duration, ...)
 end
 
 local theme = {
-    SchemeColor = Color3.fromRGB(74, 99, 135),
-    Background = Color3.fromRGB(36, 37, 43),
-    Header = Color3.fromRGB(28, 29, 34),
+    SchemeColor = Color3.fromRGB(4, 138, 1),
+    Background = Color3.fromRGB(36, 43, 36),
+    Header = Color3.fromRGB(28, 34, 29),
     TextColor = Color3.fromRGB(255,255,255),
-    ElementColor = Color3.fromRGB(32, 32, 38)
+    ElementColor = Color3.fromRGB(1, 36, 8)
 }
 local oldTheme = ""
 
