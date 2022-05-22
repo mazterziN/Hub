@@ -478,7 +478,6 @@ function Kavo.CreateLib(kavName, themeList)
         end)
         local Sections = {}
         local focusing = false
-        local viewDe = false
 
         coroutine.wrap(function()
             while wait() do
