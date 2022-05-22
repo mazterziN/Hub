@@ -111,13 +111,6 @@ local themeStyles = {
         Header = Color3.fromRGB(36, 38, 35),
         TextColor = Color3.fromRGB(152, 99, 53),
         ElementColor = Color3.fromRGB(24, 24, 24)
-    },
-    Serpent = {
-        SchemeColor = Color3.fromRGB(0, 166, 58),
-        Background = Color3.fromRGB(31, 41, 43),
-        Header = Color3.fromRGB(22, 29, 31),
-        TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(22, 29, 31)
     }
 }
 local oldTheme = ""
@@ -265,7 +258,7 @@ function Kavo.CreateLib(kavName, themeList)
     title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     title.BackgroundTransparency = 1.000
     title.BorderSizePixel = 0
-    title.Position = UDim2.new(0.0171428565, 0, 0.344827592, 0)
+    title.Position = UDim2.new(0.0171428565, 0, 0.3445, 0)
     title.Size = UDim2.new(0, 204, 0, 8)
     title.Font = Enum.Font.GothamBlack
     title.RichText = true
@@ -280,7 +273,7 @@ function Kavo.CreateLib(kavName, themeList)
     subTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     subTitle.BackgroundTransparency = 1.000
     subTitle.BorderSizePixel = 0
-    subTitle.Position = UDim2.new(0.0561428565, 0, 0.344827592, 0)
+    subTitle.Position = UDim2.new(0.056, 0, 0.3445, 0)
     subTitle.Size = UDim2.new(0, 204, 0, 8)
     subTitle.Font = Enum.Font.Gotham
     subTitle.RichText = true
