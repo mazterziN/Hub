@@ -51,7 +51,7 @@ local theme = {
     Background = Color3.fromRGB(36, 43, 36),
     Header = Color3.fromRGB(28, 34, 29),
     TextColor = Color3.fromRGB(255,255,255),
-    ElementColor = Color3.fromRGB(1, 36, 8)
+    ElementColor = Color3.fromRGB(23, 31, 25)
 }
 local oldTheme = ""
 
