@@ -203,6 +203,7 @@ function Kavo.CreateLib(kavName, themeList)
     local headerCover = Instance.new("UICorner")
     local coverup = Instance.new("Frame")
     local title = Instance.new("TextLabel")
+    local subTitle = Instance.new("TextLabel")
     local close = Instance.new("ImageButton")
     local MainSide = Instance.new("Frame")
     local sideCorner = Instance.new("UICorner")
@@ -268,10 +269,25 @@ function Kavo.CreateLib(kavName, themeList)
     title.Size = UDim2.new(0, 204, 0, 8)
     title.Font = Enum.Font.GothamBlack
     title.RichText = true
-    title.Text = kavName
+    title.Text = "mazterHub"
     title.TextColor3 = Color3.fromRGB(245, 245, 245)
     title.TextSize = 16.000
     title.TextXAlignment = Enum.TextXAlignment.Left
+	
+	
+    subTitle.Name = "subTitle"
+    subTitle.Parent = MainHeader
+    subTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    subTitle.BackgroundTransparency = 1.000
+    subTitle.BorderSizePixel = 0
+    subTitle.Position = UDim2.new(0.0171428565, 0, 0.344827592, 0)
+    subTitle.Size = UDim2.new(0, 204, 0, 8)
+    subTitle.Font = Enum.Font.Gotham
+    subTitle.RichText = true
+    subTitle.Text = kavName
+    subTitle.TextColor3 = Color3.fromRGB(245, 245, 245)
+    subTitle.TextSize = 16.000
+    subTitle.TextXAlignment = Enum.TextXAlignment.Center
 
     close.Name = "close"
     close.Parent = MainHeader
