@@ -80,25 +80,11 @@ function Kavo:ToggleUI()
     end
 end
 
-function Kavo:getUIName()
-	return LibName
-end
-
-function Kavo.CreateLib(kavName, theme)
-    if theme.SchemeColor == nil then
-        theme.SchemeColor = Color3.fromRGB(74, 99, 135)
-    elseif theme.Background == nil then
-        theme.Background = Color3.fromRGB(36, 37, 43)
-    elseif theme.Header == nil then
-        theme.Header = Color3.fromRGB(28, 29, 34)
-    elseif theme.TextColor == nil then
-        theme.TextColor = Color3.fromRGB(255,255,255)
-    elseif theme.ElementColor == nil then
-        theme.ElementColor = Color3.fromRGB(32, 32, 38)
+    function Kavo:getUIName()
+        return LibName
     end
-end
 
-    theme = theme or {}
+function Kavo.CreateLib(kavName)
     local selectedTab 
     kavName = kavName or "Library"
     table.insert(Kavo, kavName)
