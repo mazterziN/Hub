@@ -287,7 +287,7 @@ function Kavo.CreateLib(kavName, themeList)
     subTitle.Text = kavName
     subTitle.TextColor3 = Color3.fromRGB(245, 245, 245)
     subTitle.TextSize = 15.000
-    subTitle.TextXAlignment = Enum.TextXAlignment.Left
+    subTitle.TextXAlignment = Enum.TextXAlignment.Center
 
     close.Name = "close"
     close.Parent = MainHeader
@@ -547,7 +547,7 @@ function Kavo.CreateLib(kavName, themeList)
             sectionName.BorderColor3 = Color3.fromRGB(27, 42, 53)
             sectionName.Position = UDim2.new(0.0198863633, 0, 0, 0)
             sectionName.Size = UDim2.new(0.980113626, 0, 1, 0)
-            sectionName.Font = Enum.Font.GothamBlack
+            sectionName.Font = Enum.Font.GothamSemibold
             sectionName.Text = secName
             sectionName.RichText = true
             sectionName.TextColor3 = themeList.TextColor
@@ -613,7 +613,7 @@ function Kavo.CreateLib(kavName, themeList)
                 buttonElement.ClipsDescendants = true
                 buttonElement.Size = UDim2.new(0, 352, 0, 33)
                 buttonElement.AutoButtonColor = false
-                buttonElement.Font = Enum.Font.SourceSans
+                buttonElement.Font = Enum.Font.Gotham
                 buttonElement.Text = ""
                 buttonElement.TextColor3 = Color3.fromRGB(0, 0, 0)
                 buttonElement.TextSize = 14.000
@@ -939,7 +939,7 @@ function Kavo.CreateLib(kavName, themeList)
                     toggleElement.ClipsDescendants = true
                     toggleElement.Size = UDim2.new(0, 352, 0, 33)
                     toggleElement.AutoButtonColor = false
-                    toggleElement.Font = Enum.Font.SourceSans
+                    toggleElement.Font = Enum.Font.Gotham
                     toggleElement.Text = ""
                     toggleElement.TextColor3 = Color3.fromRGB(0, 0, 0)
                     toggleElement.TextSize = 14.000
@@ -1157,7 +1157,7 @@ function Kavo.CreateLib(kavName, themeList)
                 sliderElement.ClipsDescendants = true
                 sliderElement.Size = UDim2.new(0, 352, 0, 33)
                 sliderElement.AutoButtonColor = false
-                sliderElement.Font = Enum.Font.SourceSans
+                sliderElement.Font = Enum.Font.Gotham
                 sliderElement.Text = ""
                 sliderElement.TextColor3 = Color3.fromRGB(0, 0, 0)
                 sliderElement.TextSize = 14.000
@@ -1185,7 +1185,7 @@ function Kavo.CreateLib(kavName, themeList)
                 sliderBtn.Position = UDim2.new(0.488749951, 0, 0.393939406, 0)
                 sliderBtn.Size = UDim2.new(0, 149, 0, 6)
                 sliderBtn.AutoButtonColor = false
-                sliderBtn.Font = Enum.Font.SourceSans
+                sliderBtn.Font = Enum.Font.Gotham
                 sliderBtn.Text = ""
                 sliderBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
                 sliderBtn.TextSize = 14.000
@@ -1383,7 +1383,7 @@ function Kavo.CreateLib(kavName, themeList)
                 dropOpen.BackgroundColor3 = themeList.ElementColor
                 dropOpen.Size = UDim2.new(0, 352, 0, 33)
                 dropOpen.AutoButtonColor = false
-                dropOpen.Font = Enum.Font.SourceSans
+                dropOpen.Font = Enum.Font.Gotham
                 dropOpen.Text = ""
                 dropOpen.TextColor3 = Color3.fromRGB(0, 0, 0)
                 dropOpen.TextSize = 14.000
@@ -1779,7 +1779,7 @@ function Kavo.CreateLib(kavName, themeList)
                 keybindElement.ClipsDescendants = true
                 keybindElement.Size = UDim2.new(0, 352, 0, 33)
                 keybindElement.AutoButtonColor = false
-                keybindElement.Font = Enum.Font.SourceSans
+                keybindElement.Font = Enum.Font.Gotham
                 keybindElement.Text = ""
                 keybindElement.TextColor3 = Color3.fromRGB(0, 0, 0)
                 keybindElement.TextSize = 14.000
@@ -1981,7 +1981,7 @@ function Kavo.CreateLib(kavName, themeList)
                 colorElement.Position = UDim2.new(0, 0, 0.566834569, 0)
                 colorElement.Size = UDim2.new(0, 352, 0, 33)
                 colorElement.AutoButtonColor = false
-                colorElement.Font = Enum.Font.SourceSans
+                colorElement.Font = Enum.Font.Gotham
                 colorElement.Text = ""
                 colorElement.TextColor3 = Color3.fromRGB(0, 0, 0)
                 colorElement.TextSize = 14.000
@@ -2190,7 +2190,7 @@ function Kavo.CreateLib(kavName, themeList)
                 onrainbow.BackgroundTransparency = 1.000
                 onrainbow.Position = UDim2.new(2.90643607e-06, 0, 0, 0)
                 onrainbow.Size = UDim2.new(1, 0, 1, 0)
-                onrainbow.Font = Enum.Font.SourceSans
+                onrainbow.Font = Enum.Font.Gotham
                 onrainbow.Text = ""
                 onrainbow.TextColor3 = Color3.fromRGB(0, 0, 0)
                 onrainbow.TextSize = 14.000
