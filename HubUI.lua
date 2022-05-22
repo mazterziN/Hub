@@ -84,7 +84,8 @@ end
         return LibName
     end
 
-function Kavo.CreateLib(kavName)
+function Kavo.CreateLib(kavName, standardTheme)
+	theme = standardTheme
     local selectedTab 
     kavName = kavName or "Library"
     table.insert(Kavo, kavName)
