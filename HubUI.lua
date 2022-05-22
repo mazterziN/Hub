@@ -271,7 +271,7 @@ function Kavo.CreateLib(kavName, themeList)
     title.RichText = true
     title.Text = "mazterHub"
     title.TextColor3 = Color3.fromRGB(245, 245, 245)
-    title.TextSize = 16.000
+    title.TextSize = 17.000
     title.TextXAlignment = Enum.TextXAlignment.Left
 	
 	
@@ -280,14 +280,14 @@ function Kavo.CreateLib(kavName, themeList)
     subTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     subTitle.BackgroundTransparency = 1.000
     subTitle.BorderSizePixel = 0
-    subTitle.Position = UDim2.new(0.0471428565, 0, 0.344827592, 0)
+    subTitle.Position = UDim2.new(0.0511428565, 0, 0.344827592, 0)
     subTitle.Size = UDim2.new(0, 204, 0, 8)
     subTitle.Font = Enum.Font.Gotham
     subTitle.RichText = true
     subTitle.Text = kavName
     subTitle.TextColor3 = Color3.fromRGB(245, 245, 245)
-    subTitle.TextSize = 16.000
-    subTitle.TextXAlignment = Enum.TextXAlignment.Center
+    subTitle.TextSize = 15.000
+    subTitle.TextXAlignment = Enum.TextXAlignment.Left
 
     close.Name = "close"
     close.Parent = MainHeader
@@ -548,7 +548,7 @@ function Kavo.CreateLib(kavName, themeList)
             sectionName.BorderColor3 = Color3.fromRGB(27, 42, 53)
             sectionName.Position = UDim2.new(0.0198863633, 0, 0, 0)
             sectionName.Size = UDim2.new(0.980113626, 0, 1, 0)
-            sectionName.Font = Enum.Font.Gotham
+            sectionName.Font = Enum.Font.GothamBlack
             sectionName.Text = secName
             sectionName.RichText = true
             sectionName.TextColor3 = themeList.TextColor
@@ -603,7 +603,6 @@ function Kavo.CreateLib(kavName, themeList)
                 local buttonElement = Instance.new("TextButton")
                 local UICorner = Instance.new("UICorner")
                 local btnInfo = Instance.new("TextLabel")
-                local viewInfo = Instance.new("ImageButton")
                 local touch = Instance.new("ImageLabel")
                 local Sample = Instance.new("ImageLabel")
 
@@ -623,19 +622,6 @@ function Kavo.CreateLib(kavName, themeList)
 
                 UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = buttonElement
-
-                viewInfo.Name = "viewInfo"
-                viewInfo.Parent = buttonElement
-                viewInfo.BackgroundTransparency = 1.000
-                viewInfo.LayoutOrder = 9
-                viewInfo.Position = UDim2.new(0.930000007, 0, 0.151999995, 0)
-                viewInfo.Size = UDim2.new(0, 23, 0, 23)
-                viewInfo.ZIndex = 2
-                viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
-                Objects[viewInfo] = "ImageColor3"
-                viewInfo.ImageRectOffset = Vector2.new(764, 764)
-                viewInfo.ImageRectSize = Vector2.new(36, 36)
 
                 Sample.Name = "Sample"
                 Sample.Parent = buttonElement
@@ -754,32 +740,11 @@ function Kavo.CreateLib(kavName, themeList)
                         hovering = false
                     end
                 end)
-                viewInfo.MouseButton1Click:Connect(function()
-                    if not viewDe then
-                        viewDe = true
-                        focusing = true
-                        for i,v in next, infoContainer:GetChildren() do
-                            if v ~= moreInfo then
-                                Utility:TweenObject(v, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                            end
-                        end
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,0,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 0.5}, 0.2)
-                        Utility:TweenObject(btn, {BackgroundColor3 = themeList.ElementColor}, 0.2)
-                        wait(1.5)
-                        focusing = false
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 1}, 0.2)
-                        wait(0)
-                        viewDe = false
-                    end
-                end)
                 coroutine.wrap(function()
                     while wait() do
                         if not hovering then
                             buttonElement.BackgroundColor3 = themeList.ElementColor
                         end
-                        viewInfo.ImageColor3 = themeList.SchemeColor
                         Sample.ImageColor3 = themeList.SchemeColor
                         moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                         moreInfo.TextColor3 = themeList.TextColor
@@ -800,7 +765,6 @@ function Kavo.CreateLib(kavName, themeList)
                 callback = callback or function() end
                 local textboxElement = Instance.new("TextButton")
                 local UICorner = Instance.new("UICorner")
-                local viewInfo = Instance.new("ImageButton")
                 local write = Instance.new("ImageLabel")
                 local TextBox = Instance.new("TextBox")
                 local UICorner_2 = Instance.new("UICorner")
@@ -812,25 +776,13 @@ function Kavo.CreateLib(kavName, themeList)
                 textboxElement.ClipsDescendants = true
                 textboxElement.Size = UDim2.new(0, 352, 0, 33)
                 textboxElement.AutoButtonColor = false
-                textboxElement.Font = Enum.Font.SourceSans
+                textboxElement.Font = Enum.Font.Gotham
                 textboxElement.Text = ""
                 textboxElement.TextColor3 = Color3.fromRGB(0, 0, 0)
                 textboxElement.TextSize = 14.000
 
                 UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = textboxElement
-
-                viewInfo.Name = "viewInfo"
-                viewInfo.Parent = textboxElement
-                viewInfo.BackgroundTransparency = 1.000
-                viewInfo.LayoutOrder = 9
-                viewInfo.Position = UDim2.new(0.930000007, 0, 0.151999995, 0)
-                viewInfo.Size = UDim2.new(0, 23, 0, 23)
-                viewInfo.ZIndex = 2
-                viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
-                viewInfo.ImageRectOffset = Vector2.new(764, 764)
-                viewInfo.ImageRectSize = Vector2.new(36, 36)
 
                 write.Name = "write"
                 write.Parent = textboxElement
@@ -906,7 +858,6 @@ function Kavo.CreateLib(kavName, themeList)
                                 UpdateSize()
             
                 local btn = textboxElement
-                local infBtn = viewInfo
 
                 btn.MouseButton1Click:Connect(function()
                     if focusing then
@@ -952,34 +903,12 @@ function Kavo.CreateLib(kavName, themeList)
                         TextBox.Text = ""  
                     end
                 end)
-
-                viewInfo.MouseButton1Click:Connect(function()
-                    if not viewDe then
-                        viewDe = true
-                        focusing = true
-                        for i,v in next, infoContainer:GetChildren() do
-                            if v ~= moreInfo then
-                                Utility:TweenObject(v, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                            end
-                        end
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,0,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 0.5}, 0.2)
-                        Utility:TweenObject(btn, {BackgroundColor3 = themeList.ElementColor}, 0.2)
-                        wait(1.5)
-                        focusing = false
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 1}, 0.2)
-                        wait(0)
-                        viewDe = false
-                    end
-                end)
                 coroutine.wrap(function()
                     while wait() do
                         if not hovering then
                             textboxElement.BackgroundColor3 = themeList.ElementColor
                         end
                         TextBox.BackgroundColor3 = Color3.fromRGB(themeList.ElementColor.r * 255 - 6, themeList.ElementColor.g * 255 - 6, themeList.ElementColor.b * 255 - 7)
-                        viewInfo.ImageColor3 = themeList.SchemeColor
                         moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                         moreInfo.TextColor3 = themeList.TextColor
                         write.ImageColor3 = themeList.SchemeColor
@@ -1003,7 +932,6 @@ function Kavo.CreateLib(kavName, themeList)
                     local toggleDisabled = Instance.new("ImageLabel")
                     local toggleEnabled = Instance.new("ImageLabel")
                     local togName = Instance.new("TextLabel")
-                    local viewInfo = Instance.new("ImageButton")
                     local Sample = Instance.new("ImageLabel")
 
                     toggleElement.Name = "toggleElement"
@@ -1056,18 +984,6 @@ function Kavo.CreateLib(kavName, themeList)
                     togName.TextSize = 14.000
                     togName.TextXAlignment = Enum.TextXAlignment.Left
 
-                    viewInfo.Name = "viewInfo"
-                    viewInfo.Parent = toggleElement
-                    viewInfo.BackgroundTransparency = 1.000
-                    viewInfo.LayoutOrder = 9
-                    viewInfo.Position = UDim2.new(0.930000007, 0, 0.151999995, 0)
-                    viewInfo.Size = UDim2.new(0, 23, 0, 23)
-                    viewInfo.ZIndex = 2
-                    viewInfo.Image = "rbxassetid://3926305904"
-                    viewInfo.ImageColor3 = themeList.SchemeColor
-                    viewInfo.ImageRectOffset = Vector2.new(764, 764)
-                    viewInfo.ImageRectSize = Vector2.new(36, 36)
-
                     Sample.Name = "Sample"
                     Sample.Parent = toggleElement
                     Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1107,7 +1023,6 @@ function Kavo.CreateLib(kavName, themeList)
                     local btn = toggleElement
                     local sample = Sample
                     local img = toggleEnabled
-                    local infBtn = viewInfo
 
                                     updateSectionFrame()
                 UpdateSize()
@@ -1191,32 +1106,11 @@ function Kavo.CreateLib(kavName, themeList)
                             toggleDisabled.ImageColor3 = themeList.SchemeColor
                             toggleEnabled.ImageColor3 = themeList.SchemeColor
                             togName.TextColor3 = themeList.TextColor
-                            viewInfo.ImageColor3 = themeList.SchemeColor
                             Sample.ImageColor3 = themeList.SchemeColor
                             moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                             moreInfo.TextColor3 = themeList.TextColor
                         end
                     end)()
-                    viewInfo.MouseButton1Click:Connect(function()
-                        if not viewDe then
-                            viewDe = true
-                            focusing = true
-                            for i,v in next, infoContainer:GetChildren() do
-                                if v ~= moreInfo then
-                                    Utility:TweenObject(v, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                                end
-                            end
-                            Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,0,0)}, 0.2)
-                            Utility:TweenObject(blurFrame, {BackgroundTransparency = 0.5}, 0.2)
-                            Utility:TweenObject(btn, {BackgroundColor3 = themeList.ElementColor}, 0.2)
-                            wait(1.5)
-                            focusing = false
-                            Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                            Utility:TweenObject(blurFrame, {BackgroundTransparency = 1}, 0.2)
-                            wait(0)
-                            viewDe = false
-                        end
-                    end)
                     function TogFunction:UpdateToggle(newText, isTogOn)
                         isTogOn = isTogOn or toggle
                         if newText ~= nil then 
@@ -1250,7 +1144,6 @@ function Kavo.CreateLib(kavName, themeList)
                 local sliderElement = Instance.new("TextButton")
                 local UICorner = Instance.new("UICorner")
                 local togName = Instance.new("TextLabel")
-                local viewInfo = Instance.new("ImageButton")
                 local sliderBtn = Instance.new("TextButton")
                 local UICorner_2 = Instance.new("UICorner")
                 local UIListLayout = Instance.new("UIListLayout")
@@ -1285,18 +1178,6 @@ function Kavo.CreateLib(kavName, themeList)
                 togName.TextColor3 = themeList.TextColor
                 togName.TextSize = 14.000
                 togName.TextXAlignment = Enum.TextXAlignment.Left
-
-                viewInfo.Name = "viewInfo"
-                viewInfo.Parent = sliderElement
-                viewInfo.BackgroundTransparency = 1.000
-                viewInfo.LayoutOrder = 9
-                viewInfo.Position = UDim2.new(0.930000007, 0, 0.151999995, 0)
-                viewInfo.Size = UDim2.new(0, 23, 0, 23)
-                viewInfo.ZIndex = 2
-                viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
-                viewInfo.ImageRectOffset = Vector2.new(764, 764)
-                viewInfo.ImageRectSize = Vector2.new(36, 36)
 
                 sliderBtn.Name = "sliderBtn"
                 sliderBtn.Parent = sliderElement
@@ -1384,7 +1265,6 @@ function Kavo.CreateLib(kavName, themeList)
                 local ms = game.Players.LocalPlayer:GetMouse()
                 local uis = game:GetService("UserInputService")
                 local btn = sliderElement
-                local infBtn = viewInfo
                 local hovering = false
                 btn.MouseEnter:Connect(function()
                     if not focusing then
@@ -1413,7 +1293,6 @@ function Kavo.CreateLib(kavName, themeList)
                         val.TextColor3 = themeList.TextColor
                         write.ImageColor3 = themeList.SchemeColor
                         togName.TextColor3 = themeList.TextColor
-                        viewInfo.ImageColor3 = themeList.SchemeColor
                         sliderBtn.BackgroundColor3 = Color3.fromRGB(themeList.ElementColor.r * 255 + 5, themeList.ElementColor.g * 255 + 5, themeList.ElementColor.b * 255  + 5)
                         sliderDrag.BackgroundColor3 = themeList.SchemeColor
                     end
@@ -1460,27 +1339,7 @@ function Kavo.CreateLib(kavName, themeList)
                         end
                         Utility:TweenObject(blurFrame, {BackgroundTransparency = 1}, 0.2)
                     end
-                end)
-                viewInfo.MouseButton1Click:Connect(function()
-                    if not viewDe then
-                        viewDe = true
-                        focusing = true
-                        for i,v in next, infoContainer:GetChildren() do
-                            if v ~= moreInfo then
-                                Utility:TweenObject(v, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                            end
-                        end
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,0,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 0.5}, 0.2)
-                        Utility:TweenObject(btn, {BackgroundColor3 = themeList.ElementColor}, 0.2)
-                        wait(1.5)
-                        focusing = false
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 1}, 0.2)
-                        wait(0)
-                        viewDe = false
-                    end
-                end)        
+                end)       
             end
 
             function Elements:NewDropdown(dropname, dropinf, list, callback)
@@ -1498,7 +1357,6 @@ function Kavo.CreateLib(kavName, themeList)
                 local dropOpen = Instance.new("TextButton")
                 local listImg = Instance.new("ImageLabel")
                 local itemTextbox = Instance.new("TextLabel")
-                local viewInfo = Instance.new("ImageButton")
                 local UICorner = Instance.new("UICorner")
                 local UIListLayout = Instance.new("UIListLayout")
                 local Sample = Instance.new("ImageLabel")
@@ -1612,18 +1470,6 @@ function Kavo.CreateLib(kavName, themeList)
                 itemTextbox.TextSize = 14.000
                 itemTextbox.TextXAlignment = Enum.TextXAlignment.Left
 
-                viewInfo.Name = "viewInfo"
-                viewInfo.Parent = dropOpen
-                viewInfo.BackgroundTransparency = 1.000
-                viewInfo.LayoutOrder = 9
-                viewInfo.Position = UDim2.new(0.930000007, 0, 0.151999995, 0)
-                viewInfo.Size = UDim2.new(0, 23, 0, 23)
-                viewInfo.ZIndex = 2
-                viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
-                viewInfo.ImageRectOffset = Vector2.new(764, 764)
-                viewInfo.ImageRectSize = Vector2.new(36, 36)
-
                 UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = dropOpen
 
@@ -1646,7 +1492,6 @@ function Kavo.CreateLib(kavName, themeList)
 
                 local ms = game.Players.LocalPlayer:GetMouse()
                 local uis = game:GetService("UserInputService")
-                local infBtn = viewInfo
 
                 local moreInfo = Instance.new("TextLabel")
                 local UICorner = Instance.new("UICorner")
@@ -1690,7 +1535,6 @@ function Kavo.CreateLib(kavName, themeList)
                         dropFrame.BackgroundColor3 = themeList.Background
                         listImg.ImageColor3 = themeList.SchemeColor
                         itemTextbox.TextColor3 = themeList.TextColor
-                        viewInfo.ImageColor3 = themeList.SchemeColor
                         moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                         moreInfo.TextColor3 = themeList.TextColor
                     end
@@ -1703,28 +1547,7 @@ function Kavo.CreateLib(kavName, themeList)
                 end 
                 if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
                     Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
-                end 
-
-                viewInfo.MouseButton1Click:Connect(function()
-                    if not viewDe then
-                        viewDe = true
-                        focusing = true
-                        for i,v in next, infoContainer:GetChildren() do
-                            if v ~= moreInfo then
-                                Utility:TweenObject(v, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                            end
-                        end
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,0,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 0.5}, 0.2)
-                        Utility:TweenObject(btn, {BackgroundColor3 = themeList.ElementColor}, 0.2)
-                        wait(1.5)
-                        focusing = false
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 1}, 0.2)
-                        wait(0)
-                        viewDe = false
-                    end
-                end)     
+                end    
 
                 for i,v in next, list do
                     local optionSelect = Instance.new("TextButton")
@@ -1939,14 +1762,12 @@ function Kavo.CreateLib(kavName, themeList)
                 local keybindElement = Instance.new("TextButton")
                 local UICorner = Instance.new("UICorner")
                 local togName = Instance.new("TextLabel")
-                local viewInfo = Instance.new("ImageButton")
                 local touch = Instance.new("ImageLabel")
                 local Sample = Instance.new("ImageLabel")
                 local togName_2 = Instance.new("TextLabel")
 
                 local ms = game.Players.LocalPlayer:GetMouse()
                 local uis = game:GetService("UserInputService")
-                local infBtn = viewInfo
 
                 local moreInfo = Instance.new("TextLabel")
                 local UICorner1 = Instance.new("UICorner")
@@ -2037,39 +1858,7 @@ function Kavo.CreateLib(kavName, themeList)
                 togName.TextColor3 = themeList.TextColor
                 togName.TextSize = 14.000
                 togName.TextXAlignment = Enum.TextXAlignment.Left
-
-                viewInfo.Name = "viewInfo"
-                viewInfo.Parent = keybindElement
-                viewInfo.BackgroundTransparency = 1.000
-                viewInfo.LayoutOrder = 9
-                viewInfo.Position = UDim2.new(0.930000007, 0, 0.151999995, 0)
-                viewInfo.Size = UDim2.new(0, 23, 0, 23)
-                viewInfo.ZIndex = 2
-                viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
-                viewInfo.ImageRectOffset = Vector2.new(764, 764)
-                viewInfo.ImageRectSize = Vector2.new(36, 36)
-                viewInfo.MouseButton1Click:Connect(function()
-                    if not viewDe then
-                        viewDe = true
-                        focusing = true
-                        for i,v in next, infoContainer:GetChildren() do
-                            if v ~= moreInfo then
-                                Utility:TweenObject(v, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                            end
-                        end
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,0,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 0.5}, 0.2)
-                        Utility:TweenObject(keybindElement, {BackgroundColor3 = themeList.ElementColor}, 0.2)
-                        wait(1.5)
-                        focusing = false
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 1}, 0.2)
-                        wait(0)
-                        viewDe = false
-                    end
-                end)  
-                                updateSectionFrame()
+                updateSectionFrame()
                 UpdateSize()
                 local oHover = false
                 keybindElement.MouseEnter:Connect(function()
@@ -2133,7 +1922,6 @@ function Kavo.CreateLib(kavName, themeList)
                         end
                         togName_2.TextColor3 = themeList.SchemeColor
                         touch.ImageColor3 = themeList.SchemeColor
-                        viewInfo.ImageColor3 = themeList.SchemeColor
                         togName.BackgroundColor3 = themeList.TextColor
                         togName.TextColor3 = themeList.TextColor
                         Sample.ImageColor3 = themeList.SchemeColor
@@ -2157,7 +1945,6 @@ function Kavo.CreateLib(kavName, themeList)
                 local UICorner_2 = Instance.new("UICorner")
                 local touch = Instance.new("ImageLabel")
                 local togName = Instance.new("TextLabel")
-                local viewInfo = Instance.new("ImageButton")
                 local colorCurrent = Instance.new("Frame")
                 local UICorner_3 = Instance.new("UICorner")
                 local UIListLayout = Instance.new("UIListLayout")
@@ -2309,38 +2096,6 @@ function Kavo.CreateLib(kavName, themeList)
 
                 UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = moreInfo
-
-                viewInfo.Name = "viewInfo"
-                viewInfo.Parent = colorHeader
-                viewInfo.BackgroundTransparency = 1.000
-                viewInfo.LayoutOrder = 9
-                viewInfo.Position = UDim2.new(0.930000007, 0, 0.151999995, 0)
-                viewInfo.Size = UDim2.new(0, 23, 0, 23)
-                viewInfo.ZIndex = 2
-                viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
-                viewInfo.ImageRectOffset = Vector2.new(764, 764)
-                viewInfo.ImageRectSize = Vector2.new(36, 36)
-                viewInfo.MouseButton1Click:Connect(function()
-                    if not viewDe then
-                        viewDe = true
-                        focusing = true
-                        for i,v in next, infoContainer:GetChildren() do
-                            if v ~= moreInfo then
-                                Utility:TweenObject(v, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                            end
-                        end
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,0,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 0.5}, 0.2)
-                        Utility:TweenObject(colorElement, {BackgroundColor3 = themeList.ElementColor}, 0.2)
-                        wait(1.5)
-                        focusing = false
-                        Utility:TweenObject(moreInfo, {Position = UDim2.new(0,0,2,0)}, 0.2)
-                        Utility:TweenObject(blurFrame, {BackgroundTransparency = 1}, 0.2)
-                        wait(0)
-                        viewDe = false
-                    end
-                end)   
 
                 colorCurrent.Name = "colorCurrent"
                 colorCurrent.Parent = colorHeader
@@ -2494,7 +2249,6 @@ function Kavo.CreateLib(kavName, themeList)
                         togName.TextColor3 = themeList.TextColor
                         moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                         moreInfo.TextColor3 = themeList.TextColor
-                        viewInfo.ImageColor3 = themeList.SchemeColor
                         colorInners.BackgroundColor3 = themeList.ElementColor
                         toggleDisabled.ImageColor3 = themeList.SchemeColor
                         toggleEnabled.ImageColor3 = themeList.SchemeColor
