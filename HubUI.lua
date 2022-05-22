@@ -310,7 +310,7 @@ function Kavo.CreateLib(kavName)
         page.Size = UDim2.new(1, 0, 1, 0)
         page.ScrollBarThickness = 5
         page.Visible = false
-        page.ScrollBarImageColor3 = theme.Header
+        page.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 
         pageListing.Name = "pageListing"
         pageListing.Parent = page
