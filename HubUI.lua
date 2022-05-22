@@ -147,6 +147,10 @@ function Kavo:ToggleUI()
     end
 end
 
+function Kavo:getUIName()
+	return LibName
+end
+
 function Kavo.CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
@@ -262,7 +266,7 @@ function Kavo.CreateLib(kavName, themeList)
     title.BorderSizePixel = 0
     title.Position = UDim2.new(0.0171428565, 0, 0.344827592, 0)
     title.Size = UDim2.new(0, 204, 0, 8)
-    title.Font = Enum.Font.Gotham
+    title.Font = Enum.Font.GothamBlack
     title.RichText = true
     title.Text = kavName
     title.TextColor3 = Color3.fromRGB(245, 245, 245)
