@@ -2275,7 +2275,7 @@ function Kavo.CreateLib(kavName)
             	label.Text = title
            		label.Size = UDim2.new(0, 352, 0, 33)
 	            label.Font = Enum.Font.Gotham
-	            label.Text = "  "..title
+	            label.Text = title
 	            label.RichText = true
 	            label.TextColor3 = theme.TextColor
 	            Objects[label] = "TextColor3"
