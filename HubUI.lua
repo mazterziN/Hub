@@ -267,7 +267,7 @@ function Kavo.CreateLib(kavName, themeList)
     title.BorderSizePixel = 0
     title.Position = UDim2.new(0.0171428565, 0, 0.344827592, 0)
     title.Size = UDim2.new(0, 204, 0, 8)
-    title.Font = Enum.Font.Gotham
+    title.Font = Enum.Font.GothamBlack
     title.RichText = true
     title.Text = "mazterHub"
     title.TextColor3 = Color3.fromRGB(245, 245, 245)
@@ -280,7 +280,7 @@ function Kavo.CreateLib(kavName, themeList)
     subTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     subTitle.BackgroundTransparency = 1.000
     subTitle.BorderSizePixel = 0
-    subTitle.Position = UDim2.new(0.1471428565, 0, 0.344827592, 0)
+    subTitle.Position = UDim2.new(0.0371428565, 0, 0.344827592, 0)
     subTitle.Size = UDim2.new(0, 204, 0, 8)
     subTitle.Font = Enum.Font.Gotham
     subTitle.RichText = true
