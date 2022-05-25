@@ -9,7 +9,7 @@ if game.PlaceId == 9049840490 then
     
 -- ALL STAR TOWER DEFENSE
 elseif game.PlaceId == 4996049426 then
-    return
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Scripts/main/mazterHub/AllStarTowerDefense.lua"))()
 
 -- GRAND PIRATES
 elseif game.PlaceId == 9136292138 then
