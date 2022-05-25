@@ -13,7 +13,7 @@ elseif game.PlaceId == 4996049426 then
 
 -- GRAND PIRATES
 elseif game.PlaceId == 9136292138 then
-    return
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Scripts/main/mazterHub/GrandPirates.lua"))()
 
 -- GENERAL
 else
