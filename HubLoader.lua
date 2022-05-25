@@ -6,11 +6,7 @@ end)
 -- SONIC SPEED SIMULATOR
 if game.PlaceId == 9049840490 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Scripts/main/mazterHub/SonicSpeedSimulator.lua"))()
-
--- A ONE PIECE GAME
-elseif game.PlaceId == 8396586868 then
-    return
-
+    
 -- ALL STAR TOWER DEFENSE
 elseif game.PlaceId == 4996049426 then
     return
