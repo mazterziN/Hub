@@ -27,7 +27,7 @@ function Library:GetSide(LeftSize, RightSize)
     end
 end
 
-function Library:CreateWindow(title, subTitleName, subcolor)
+function Library:CreateWindow(title, subTitleName, color)
     title = title or "MAZTER HUB"
     subTitleName = subTitleName or "General"
     color = color and Library:GetColor(color) or Color3.fromRGB(46, 232, 39)
@@ -83,10 +83,11 @@ function Library:CreateWindow(title, subTitleName, subcolor)
     title_18.TextSize = 18.000
     title_18.TextStrokeTransparency = 1.000
     title_18.TextXAlignment = Enum.TextXAlignment.Left
+    title_18.TextYAlignment = Enum.TextYAlignment.Center
 
     subTitle.Name = "subTitle"
     subTitle.Parent = outlinecore
-    subTitle.BackgroundColor3 = Color3.fromRGB(210, 210, 210)
+    subTitle.BackgroundColor3 = Color3.fromRGB(170, 170, 170)
     subTitle.BackgroundTransparency = 1.000
     subTitle.Position = UDim2.new(0.0185185187, 0, 0.00188323914, 0)
     subTitle.Size = UDim2.new(0, 521, 0, 23)
@@ -95,6 +96,7 @@ function Library:CreateWindow(title, subTitleName, subcolor)
     subTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
     subTitle.TextSize = 16.000
     subTitle.TextXAlignment = Enum.TextXAlignment.Center
+    subTitle.TextYAlignment = Enum.TextYAlignment.Center
 
     inline.Name = "inline"
     inline.Parent = outlinecore
@@ -323,7 +325,7 @@ function Library:CreateWindow(title, subTitleName, subcolor)
 
         -- Tab Types
         function TabTypes:CreateGroupbox(name, side)
-            name = name or "NewGroupbox"
+            name = name or "Box"
             side = side and side or Library:GetSide(#Left:GetChildren(), #Right:GetChildren())
 
             -- Groupbox Main
@@ -397,7 +399,7 @@ function Library:CreateWindow(title, subTitleName, subcolor)
 
             -- Groupbox Types
             function GroupTypes:CreateToggle(name, callback)
-                name = name or "New Toggle"
+                name = name or "Toggle"
                 callback = callback or function(v) print(v) end
 
                 -- Toggle Main
