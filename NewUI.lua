@@ -599,7 +599,9 @@ function Library:CreateWindow(title, subTitleName, color)
                 -- Slider Instances
                 local title_15 = Instance.new("TextLabel")
                 local slider = Instance.new("Frame")
+                local UIGradient_15 = Instance.new("UIGradient")
                 local bar = Instance.new("Frame")
+                local UIGradient_16 = Instance.new("UIGradient")
                 local value = Instance.new("TextLabel")
 
                 -- Slider Properties
@@ -610,11 +612,11 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_15.Position = UDim2.new(0, 10, 0, 51)
                 title_15.Size = UDim2.new(0, 234, 0, 37)
                 title_15.ZIndex = 0
-                title_15.Font = Enum.Font.GothamMedium
+                title_15.Font = Enum.Font.SourceSans
                 title_15.Text = name
                 title_15.TextColor3 = Color3.fromRGB(255, 255, 255)
                 title_15.TextSize = 15.000
-                title_15.TextStrokeTransparency = 1.000
+                title_15.TextStrokeTransparency = 0.000
                 title_15.TextXAlignment = Enum.TextXAlignment.Left
                 title_15.TextYAlignment = Enum.TextYAlignment.Top
 
@@ -625,6 +627,10 @@ function Library:CreateWindow(title, subTitleName, color)
                 slider.Position = UDim2.new(0, 0, 0, 22)
                 slider.Size = UDim2.new(0, 234, 0, 15)
                 
+                UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(167, 167, 167))}
+                UIGradient_15.Rotation = 90
+                UIGradient_15.Parent = slider
+                
                 bar.Name = "bar"
                 bar.Parent = slider
                 bar.BackgroundColor3 = color
@@ -632,16 +638,20 @@ function Library:CreateWindow(title, subTitleName, color)
                 bar.BorderSizePixel = 0
                 bar.Size = UDim2.new(0, 50, 1, 0)
                 
+                UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(167, 167, 167))}
+                UIGradient_16.Rotation = 90
+                UIGradient_16.Parent = bar
+                
                 value.Name = "value"
                 value.Parent = slider
                 value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 value.BackgroundTransparency = 1.000
                 value.Size = UDim2.new(1, 0, 1, 0)
-                value.Font = Enum.Font.GothamMedium
+                value.Font = Enum.Font.SourceSans
                 value.Text = min .. "/" .. max
                 value.TextColor3 = Color3.fromRGB(255, 255, 255)
                 value.TextSize = 14.000
-                value.TextStrokeTransparency = 1.000
+                value.TextStrokeTransparency = 0.000
 
                 -- Slider Code
                 bar.Size = UDim2.new(def / max, 0, 1, 0)
