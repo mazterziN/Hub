@@ -73,7 +73,6 @@ function Library:CreateWindow(title, subTitleName, color)
 
     title_18.Name = "title"
     title_18.Parent = outlinecore
-    title_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     title_18.BackgroundTransparency = 1.000
     title_18.Position = UDim2.new(0.0185185187, 0, 0.00188323914, 0)
     title_18.Size = UDim2.new(0, 521, 0, 23)
@@ -87,13 +86,12 @@ function Library:CreateWindow(title, subTitleName, color)
 
     subTitle.Name = "subTitle"
     subTitle.Parent = outlinecore
-    subTitle.BackgroundColor3 = Color3.fromRGB(170, 170, 170)
     subTitle.BackgroundTransparency = 1.000
     subTitle.Position = UDim2.new(0.0185185187, 0, 0.00188323914, 0)
     subTitle.Size = UDim2.new(0, 521, 0, 23)
     subTitle.Font = Enum.Font.GothamBold
     subTitle.Text = subTitleName
-    subTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+    subTitle.TextColor3 = Color3.fromRGB(200, 200, 200)
     subTitle.TextSize = 16.000
     subTitle.TextXAlignment = Enum.TextXAlignment.Center
     subTitle.TextYAlignment = Enum.TextYAlignment.Center
