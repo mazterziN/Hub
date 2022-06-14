@@ -609,7 +609,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_15.Position = UDim2.new(0, 10, 0, 51)
                 title_15.Size = UDim2.new(0, 234, 0, 37)
                 title_15.ZIndex = 0
-                title_15.Font = Enum.Font.GothamLight
+                title_15.Font = Enum.Font.Gotham
                 title_15.Text = name
                 title_15.TextColor3 = Color3.fromRGB(255, 255, 255)
                 title_15.TextSize = 15.000
@@ -635,7 +635,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 value.BackgroundTransparency = 1.000
                 value.Size = UDim2.new(1, 0, 1, 0)
-                value.Font = Enum.Font.GothamLight
+                value.Font = Enum.Font.Gotham
                 value.Text = min .. "/" .. max
                 value.TextColor3 = Color3.fromRGB(255, 255, 255)
                 value.TextSize = 14.000
