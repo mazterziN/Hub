@@ -27,8 +27,9 @@ function Library:GetSide(LeftSize, RightSize)
     end
 end
 
-function Library:CreateWindow(title, color)
-    title = title or "Bracket Lib V2"
+function Library:CreateWindow(title, subTitleName, subcolor)
+    title = title or "MAZTER HUB"
+    subTitleName = subTitleName or "General"
     color = color and Library:GetColor(color) or Color3.fromRGB(46, 232, 39)
 
     -- Window Main
@@ -42,6 +43,7 @@ function Library:CreateWindow(title, color)
     local BracketV2 = Instance.new("ScreenGui")
     local core = Instance.new("Frame")
     local title_18 = Instance.new("TextLabel")
+    local subTitle = Instance.new("TextLabel")
     local outlinecore = Instance.new("Frame")
     local inline = Instance.new("Frame")
     local inlineoutline = Instance.new("Frame")
@@ -81,6 +83,18 @@ function Library:CreateWindow(title, color)
     title_18.TextSize = 18.000
     title_18.TextStrokeTransparency = 1.000
     title_18.TextXAlignment = Enum.TextXAlignment.Left
+
+    subTitle.Name = "subTitle"
+    subTitle.Parent = outlinecore
+    subTitle.BackgroundColor3 = Color3.fromRGB(210, 210, 210)
+    subTitle.BackgroundTransparency = 1.000
+    subTitle.Position = UDim2.new(0.0185185187, 0, 0.00188323914, 0)
+    subTitle.Size = UDim2.new(0, 521, 0, 23)
+    subTitle.Font = Enum.Font.GothamBold
+    subTitle.Text = subTitleName
+    subTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+    subTitle.TextSize = 16.000
+    subTitle.TextXAlignment = Enum.TextXAlignment.Center
 
     inline.Name = "inline"
     inline.Parent = outlinecore
