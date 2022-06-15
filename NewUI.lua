@@ -844,6 +844,36 @@ function Library:CreateWindow(title, subTitleName, color)
                     return Selected
                 end
 
+                function DropTypes:Refresh(newOptions)
+                    for i,v in pairs(list:GetChildren()) do
+                        if v.Name == "item" then
+                            v:Destroy()
+                        end
+                    end
+                    for i,v in pairs(newOptions) do
+                        local item = Instance.new("TextButton")
+                        local title_5 = Instance.new("TextLabel")
+                        
+                        item.Name = "item"
+                        item.Parent = list
+                        item.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                        item.BorderSizePixel = 0
+                        item.Size = UDim2.new(1, 0, 0, 19)
+                        item.Text = ""
+                        item.TextSize = 13.000
+
+                        title_5.Name = "title"
+                        title_5.Parent = item
+                        title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                        title_5.BackgroundTransparency = 1.000
+                        title_5.Size = UDim2.new(1, 0, 1, 0)
+                        title_5.Font = Enum.Font.Gotham
+                        title_5.Text = v
+                        title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+                        title_5.TextSize = 13.000
+                        title_5.TextStrokeTransparency = 1.000
+                    end
+                end
                 return DropTypes
             end
 
