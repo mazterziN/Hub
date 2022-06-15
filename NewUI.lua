@@ -410,7 +410,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 -- Toggle Properties
                 checkbox.Name = "checkbox"
                 checkbox.Parent = container_2
-                checkbox.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                checkbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                 checkbox.BorderColor3 = Color3.fromRGB(8, 8, 8)
                 checkbox.Size = UDim2.new(0, 12, 0, 12)
                 checkbox.ZIndex = 0
@@ -453,7 +453,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     if (Enabled) then
                         checkbox.BackgroundColor3 = color
                     else
-                        checkbox.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                        checkbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     end
 
                     callback(Enabled)
@@ -467,7 +467,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     if (Enabled) then
                         checkbox.BackgroundColor3 = color
                     else
-                        checkbox.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                        checkbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     end
 
                     callback(Enabled)
@@ -554,7 +554,7 @@ function Library:CreateWindow(title, subTitleName, color)
                                     if (Enabled) then
                                         checkbox.BackgroundColor3 = color
                                     else
-                                        checkbox.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                                        checkbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                                     end
 
                                     if (callback) then
@@ -617,7 +617,7 @@ function Library:CreateWindow(title, subTitleName, color)
 
                 slider.Name = "slider"
                 slider.Parent = title_15
-                slider.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                slider.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                 slider.BorderColor3 = Color3.fromRGB(8, 8, 8)
                 slider.Position = UDim2.new(0, 0, 0, 22)
                 slider.Size = UDim2.new(0, 234, 0, 15)
@@ -724,7 +724,7 @@ function Library:CreateWindow(title, subTitleName, color)
 
                 combobox.Name = "combobox"
                 combobox.Parent = title_15
-                combobox.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                combobox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                 combobox.BorderColor3 = Color3.fromRGB(8, 8, 8)
                 combobox.Position = UDim2.new(0, 0, 0, 22)
                 combobox.Size = UDim2.new(0, 234, 0, 20)
@@ -858,7 +858,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 -- Button Properties
                 Button.Name = "Button"
                 Button.Parent = container_2
-                Button.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                Button.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                 Button.BorderColor3 = Color3.fromRGB(8, 8, 8)
                 Button.Position = UDim2.new(0.0399999991, 0, 0.273542613, 0)
                 Button.Size = UDim2.new(0, 234, 0, 20)
@@ -1253,7 +1253,7 @@ function Library:CreateWindow(title, subTitleName, color)
 
                 playercard.Name = "playercard"
                 playercard.Parent = container_players
-                playercard.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                playercard.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                 playercard.BorderSizePixel = 0
                 playercard.Size = UDim2.new(1, 0, 0, 60)
                 
@@ -1282,7 +1282,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 if (showbuttons) then
                     whitelist.Name = "whitelist"
                     whitelist.Parent = playercard
-                    whitelist.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                    whitelist.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     whitelist.BorderColor3 = Color3.fromRGB(8, 8, 8)
                     whitelist.Position = UDim2.new(0.119433202, 0, 0.511111259, 0)
                     whitelist.Size = UDim2.new(0, 100, 0, 19)
@@ -1306,7 +1306,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     
                     blacklist.Name = "blacklist"
                     blacklist.Parent = playercard
-                    blacklist.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                    blacklist.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     blacklist.BorderColor3 = Color3.fromRGB(8, 8, 8)
                     blacklist.Position = UDim2.new(0.338999987, 0, 0.510999978, 0)
                     blacklist.Size = UDim2.new(0, 100, 0, 19)
@@ -1330,7 +1330,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     
                     prioritize.Name = "prioritize"
                     prioritize.Parent = playercard
-                    prioritize.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                    prioritize.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     prioritize.BorderColor3 = Color3.fromRGB(8, 8, 8)
                     prioritize.Position = UDim2.new(0.559000015, 0, 0.510999978, 0)
                     prioritize.Size = UDim2.new(0, 100, 0, 19)
@@ -1354,7 +1354,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     
                     unprioritize.Name = "unprioritize"
                     unprioritize.Parent = playercard
-                    unprioritize.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+                    unprioritize.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     unprioritize.BorderColor3 = Color3.fromRGB(8, 8, 8)
                     unprioritize.Position = UDim2.new(0.778999984, 0, 0.510999978, 0)
                     unprioritize.Size = UDim2.new(0, 100, 0, 19)
