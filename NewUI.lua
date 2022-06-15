@@ -368,8 +368,7 @@ function Library:CreateWindow(title, subTitleName, color)
             title_2.Font = Enum.Font.GothamMedium
             title_2.Text = name
             title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-            title_2.TextSize = 15.000
-            title_2.TextStrokeTransparency = 1.000
+            title_2.TextSize = 16.000
             title_2.TextXAlignment = Enum.TextXAlignment.Left
             
             container_2.Name = "container"
@@ -422,7 +421,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_3.BackgroundTransparency = 1.000
                 title_3.Position = UDim2.new(1.58333337, 0, 0, 0)
                 title_3.Size = UDim2.new(0, 215, 0, 12)
-                title_3.Font = Enum.Font.GothamMedium
+                title_3.Font = Enum.Font.Gotham
                 title_3.Text = name
                 title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
                 title_3.TextSize = 15.000
@@ -434,7 +433,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 main.BackgroundTransparency = 1.000
                 main.Size = UDim2.new(19.5, 0, 1, 0)
-                main.Font = Enum.Font.GothamMedium
+                main.Font = Enum.Font.Gotham
                 main.Text = ""
                 main.TextColor3 = Color3.fromRGB(0, 0, 0)
                 main.TextSize = 14.000
@@ -496,7 +495,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     bindtext.BorderSizePixel = 0
                     bindtext.Position = UDim2.new(13.5, 0, 0, 0)
                     bindtext.Size = UDim2.new(0, 71, 0, 12)
-                    bindtext.Font = Enum.Font.GothamMedium
+                    bindtext.Font = Enum.Font.Gotham
                     bindtext.Text = "[ " .. def .. " ]"
                     bindtext.TextColor3 = Color3.fromRGB(176, 176, 176)
                     bindtext.TextSize = 14.000
@@ -508,7 +507,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     keymain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     keymain.BackgroundTransparency = 1.000
                     keymain.Size = UDim2.new(1, 0, 1, 0)
-                    keymain.Font = Enum.Font.GothamMedium
+                    keymain.Font = Enum.Font.Gotham
                     keymain.TextColor3 = Color3.fromRGB(0, 0, 0)
                     keymain.TextSize = 14.000
                     keymain.Text = ""
@@ -715,7 +714,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_15.Position = UDim2.new(0, 10, 0, 51)
                 title_15.Size = UDim2.new(0, 234, 0, 42)
                 title_15.ZIndex = 0
-                title_15.Font = Enum.Font.GothamMedium
+                title_15.Font = Enum.Font.Gotham
                 title_15.Text = name
                 title_15.TextColor3 = Color3.fromRGB(255, 255, 255)
                 title_15.TextSize = 15.000
@@ -735,7 +734,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 main_2.BackgroundTransparency = 1.000
                 main_2.Size = UDim2.new(1, 0, 1, 0)
-                main_2.Font = Enum.Font.GothamMedium
+                main_2.Font = Enum.Font.Gotham
                 main_2.Text = ""
                 main_2.TextColor3 = Color3.fromRGB(0, 0, 0)
                 main_2.TextSize = 14.000
@@ -746,7 +745,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_4.BackgroundTransparency = 1.000
                 title_4.Position = UDim2.new(0, 11, 0, 0)
                 title_4.Size = UDim2.new(0, 223, 0, 20)
-                title_4.Font = Enum.Font.GothamMedium
+                title_4.Font = Enum.Font.Gotham
                 title_4.Text = "..."
                 title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
                 title_4.TextSize = 15.000
@@ -790,7 +789,7 @@ function Library:CreateWindow(title, subTitleName, color)
                         item.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
                         item.BorderSizePixel = 0
                         item.Size = UDim2.new(1, 0, 0, 19)
-                        item.Font = Enum.Font.GothamMedium
+                        item.Font = Enum.Font.Gotham
                         item.Text = ""
                         item.TextColor3 = Color3.fromRGB(0, 0, 0)
                         item.TextSize = 14.000
@@ -800,7 +799,7 @@ function Library:CreateWindow(title, subTitleName, color)
                         title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         title_5.BackgroundTransparency = 1.000
                         title_5.Size = UDim2.new(1, 0, 1, 0)
-                        title_5.Font = Enum.Font.GothamMedium
+                        title_5.Font = Enum.Font.Gotham
                         title_5.Text = v
                         title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
                         title_5.TextSize = 14.000
@@ -864,7 +863,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 Button.Position = UDim2.new(0.0399999991, 0, 0.273542613, 0)
                 Button.Size = UDim2.new(0, 234, 0, 20)
                 Button.ZIndex = 0
-                Button.Font = Enum.Font.GothamMedium
+                Button.Font = Enum.Font.Gotham
                 Button.Text = ""
                 Button.TextColor3 = Color3.fromRGB(0, 0, 0)
                 Button.TextSize = 14.000
@@ -874,7 +873,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 title_16.BackgroundTransparency = 1.000
                 title_16.Size = UDim2.new(1, 0, 1, 0)
-                title_16.Font = Enum.Font.GothamMedium
+                title_16.Font = Enum.Font.Gotham
                 title_16.Text = name
                 title_16.TextColor3 = Color3.fromRGB(255, 255, 255)
                 title_16.TextSize = 15.000
@@ -929,7 +928,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_17.BackgroundTransparency = 1.000
                 title_17.Position = UDim2.new(1.5833323, 0, 0, 0)
                 title_17.Size = UDim2.new(0, 203, 0, 19)
-                title_17.Font = Enum.Font.GothamMedium
+                title_17.Font = Enum.Font.Gotham
                 title_17.Text = name
                 title_17.TextColor3 = Color3.fromRGB(255, 255, 255)
                 title_17.TextSize = 15.000
@@ -941,7 +940,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 main_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 main_3.BackgroundTransparency = 1.000
                 main_3.Size = UDim2.new(12.3157892, 0, 1, 0)
-                main_3.Font = Enum.Font.GothamMedium
+                main_3.Font = Enum.Font.Gotham
                 main_3.Text = ""
                 main_3.TextColor3 = Color3.fromRGB(0, 0, 0)
                 main_3.TextSize = 14.000
@@ -1202,7 +1201,7 @@ function Library:CreateWindow(title, subTitleName, color)
             title.BackgroundTransparency = 1.000
             title.Position = UDim2.new(0, 15, 0, -10)
             title.Size = UDim2.new(0, 240, 0, 20)
-            title.Font = Enum.Font.GothamMedium
+            title.Font = Enum.Font.Gotham
             title.Text = "Player List"
             title.TextColor3 = Color3.fromRGB(255, 255, 255)
             title.TextSize = 15.000
@@ -1272,7 +1271,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 info.BackgroundTransparency = 1.000
                 info.Position = UDim2.new(0.119433202, 0, 0.111111142, 0)
                 info.Size = UDim2.new(0, 435, 0, 18)
-                info.Font = Enum.Font.GothamMedium
+                info.Font = Enum.Font.Gotham
                 info.Text = "Username: " .. Name .. " | UserId: " .. UserId .. " | MembeShipType: " .. MemberShipType
                 info.TextColor3 = TeamColor
                 info.TextSize = 15.000
@@ -1287,7 +1286,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     whitelist.BorderColor3 = Color3.fromRGB(8, 8, 8)
                     whitelist.Position = UDim2.new(0.119433202, 0, 0.511111259, 0)
                     whitelist.Size = UDim2.new(0, 100, 0, 19)
-                    whitelist.Font = Enum.Font.GothamMedium
+                    whitelist.Font = Enum.Font.Gotham
                     whitelist.Text = ""
                     whitelist.TextColor3 = Color3.fromRGB(255, 255, 255)
                     whitelist.TextSize = 14.000
@@ -1299,7 +1298,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     title_2.BackgroundTransparency = 1.000
                     title_2.BorderSizePixel = 0
                     title_2.Size = UDim2.new(1, 0, 1, 0)
-                    title_2.Font = Enum.Font.GothamMedium
+                    title_2.Font = Enum.Font.Gotham
                     title_2.Text = "Whitelist"
                     title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
                     title_2.TextSize = 14.000
@@ -1311,7 +1310,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     blacklist.BorderColor3 = Color3.fromRGB(8, 8, 8)
                     blacklist.Position = UDim2.new(0.338999987, 0, 0.510999978, 0)
                     blacklist.Size = UDim2.new(0, 100, 0, 19)
-                    blacklist.Font = Enum.Font.GothamMedium
+                    blacklist.Font = Enum.Font.Gotham
                     blacklist.Text = ""
                     blacklist.TextColor3 = Color3.fromRGB(255, 255, 255)
                     blacklist.TextSize = 14.000
@@ -1323,7 +1322,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     title_3.BackgroundTransparency = 1.000
                     title_3.BorderSizePixel = 0
                     title_3.Size = UDim2.new(1, 0, 1, 0)
-                    title_3.Font = Enum.Font.GothamMedium
+                    title_3.Font = Enum.Font.Gotham
                     title_3.Text = "Blacklist"
                     title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
                     title_3.TextSize = 14.000
@@ -1335,7 +1334,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     prioritize.BorderColor3 = Color3.fromRGB(8, 8, 8)
                     prioritize.Position = UDim2.new(0.559000015, 0, 0.510999978, 0)
                     prioritize.Size = UDim2.new(0, 100, 0, 19)
-                    prioritize.Font = Enum.Font.GothamMedium
+                    prioritize.Font = Enum.Font.Gotham
                     prioritize.Text = ""
                     prioritize.TextColor3 = Color3.fromRGB(255, 255, 255)
                     prioritize.TextSize = 14.000
@@ -1347,7 +1346,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     title_4.BackgroundTransparency = 1.000
                     title_4.BorderSizePixel = 0
                     title_4.Size = UDim2.new(1, 0, 1, 0)
-                    title_4.Font = Enum.Font.GothamMedium
+                    title_4.Font = Enum.Font.Gotham
                     title_4.Text = "Prioritize"
                     title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
                     title_4.TextSize = 14.000
@@ -1359,7 +1358,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     unprioritize.BorderColor3 = Color3.fromRGB(8, 8, 8)
                     unprioritize.Position = UDim2.new(0.778999984, 0, 0.510999978, 0)
                     unprioritize.Size = UDim2.new(0, 100, 0, 19)
-                    unprioritize.Font = Enum.Font.GothamMedium
+                    unprioritize.Font = Enum.Font.Gotham
                     unprioritize.Text = ""
                     unprioritize.TextColor3 = Color3.fromRGB(255, 255, 255)
                     unprioritize.TextSize = 14.000
@@ -1371,7 +1370,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     title_5.BackgroundTransparency = 1.000
                     title_5.BorderSizePixel = 0
                     title_5.Size = UDim2.new(1, 0, 1, 0)
-                    title_5.Font = Enum.Font.GothamMedium
+                    title_5.Font = Enum.Font.Gotham
                     title_5.Text = "Unprioritize"
                     title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
                     title_5.TextSize = 14.000
