@@ -424,7 +424,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_3.Font = Enum.Font.Gotham
                 title_3.Text = name
                 title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-                title_3.TextSize = 15.000
+                title_3.TextSize = 13.000
                 title_3.TextStrokeTransparency = 1.000
                 title_3.TextXAlignment = Enum.TextXAlignment.Left
                 
@@ -498,7 +498,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     bindtext.Font = Enum.Font.Gotham
                     bindtext.Text = "[ " .. def .. " ]"
                     bindtext.TextColor3 = Color3.fromRGB(176, 176, 176)
-                    bindtext.TextSize = 14.000
+                    bindtext.TextSize = 13.000
                     bindtext.TextStrokeTransparency = 1.000
                     bindtext.TextXAlignment = Enum.TextXAlignment.Right
 
@@ -509,7 +509,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     keymain.Size = UDim2.new(1, 0, 1, 0)
                     keymain.Font = Enum.Font.Gotham
                     keymain.TextColor3 = Color3.fromRGB(0, 0, 0)
-                    keymain.TextSize = 14.000
+                    keymain.TextSize = 13.000
                     keymain.Text = ""
 
                     -- Keybind Codes
@@ -611,7 +611,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_15.Font = Enum.Font.Gotham
                 title_15.Text = name
                 title_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-                title_15.TextSize = 15.000
+                title_15.TextSize = 13.000
                 title_15.TextXAlignment = Enum.TextXAlignment.Left
                 title_15.TextYAlignment = Enum.TextYAlignment.Top
 
@@ -637,7 +637,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 value.Font = Enum.Font.Gotham
                 value.Text = min .. "/" .. max
                 value.TextColor3 = Color3.fromRGB(255, 255, 255)
-                value.TextSize = 14.000
+                value.TextSize = 13.000
 
                 -- Slider Code
                 bar.Size = UDim2.new(def / max, 0, 1, 0)
@@ -717,7 +717,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_15.Font = Enum.Font.Gotham
                 title_15.Text = name
                 title_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-                title_15.TextSize = 15.000
+                title_15.TextSize = 13.000
                 title_15.TextStrokeTransparency = 1.000
                 title_15.TextXAlignment = Enum.TextXAlignment.Left
                 title_15.TextYAlignment = Enum.TextYAlignment.Top
@@ -737,7 +737,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 main_2.Font = Enum.Font.Gotham
                 main_2.Text = ""
                 main_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-                main_2.TextSize = 14.000
+                main_2.TextSize = 13.000
                 
                 title_4.Name = "title"
                 title_4.Parent = combobox
@@ -748,7 +748,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_4.Font = Enum.Font.Gotham
                 title_4.Text = "..."
                 title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-                title_4.TextSize = 15.000
+                title_4.TextSize = 13.000
                 title_4.TextStrokeTransparency = 1.000
                 title_4.TextXAlignment = Enum.TextXAlignment.Left
                 
@@ -792,7 +792,7 @@ function Library:CreateWindow(title, subTitleName, color)
                         item.Font = Enum.Font.Gotham
                         item.Text = ""
                         item.TextColor3 = Color3.fromRGB(0, 0, 0)
-                        item.TextSize = 14.000
+                        item.TextSize = 13.000
 
                         title_5.Name = "title"
                         title_5.Parent = item
@@ -802,7 +802,7 @@ function Library:CreateWindow(title, subTitleName, color)
                         title_5.Font = Enum.Font.Gotham
                         title_5.Text = v
                         title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-                        title_5.TextSize = 14.000
+                        title_5.TextSize = 13.000
                         title_5.TextStrokeTransparency = 1.000
 
                         item.MouseButton1Click:Connect(function()
@@ -876,7 +876,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_16.Font = Enum.Font.Gotham
                 title_16.Text = name
                 title_16.TextColor3 = Color3.fromRGB(255, 255, 255)
-                title_16.TextSize = 15.000
+                title_16.TextSize = 13.000
                 title_16.TextStrokeTransparency = 1.000
 
                 -- Button Code
@@ -931,7 +931,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 title_17.Font = Enum.Font.Gotham
                 title_17.Text = name
                 title_17.TextColor3 = Color3.fromRGB(255, 255, 255)
-                title_17.TextSize = 15.000
+                title_17.TextSize = 13.000
                 title_17.TextStrokeTransparency = 1.000
                 title_17.TextXAlignment = Enum.TextXAlignment.Left
                 
@@ -943,7 +943,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 main_3.Font = Enum.Font.Gotham
                 main_3.Text = ""
                 main_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-                main_3.TextSize = 14.000
+                main_3.TextSize = 13.000
                 
                 colorframe.Name = "colorframe"
                 colorframe.Parent = BracketV2
@@ -1204,7 +1204,7 @@ function Library:CreateWindow(title, subTitleName, color)
             title.Font = Enum.Font.Gotham
             title.Text = "Player List"
             title.TextColor3 = Color3.fromRGB(255, 255, 255)
-            title.TextSize = 15.000
+            title.TextSize = 13.000
             title.TextStrokeTransparency = 1.000
             title.TextXAlignment = Enum.TextXAlignment.Left
             
@@ -1274,7 +1274,7 @@ function Library:CreateWindow(title, subTitleName, color)
                 info.Font = Enum.Font.Gotham
                 info.Text = "Username: " .. Name .. " | UserId: " .. UserId .. " | MembeShipType: " .. MemberShipType
                 info.TextColor3 = TeamColor
-                info.TextSize = 15.000
+                info.TextSize = 13.000
                 info.TextStrokeTransparency = 1.000
                 info.TextWrapped = true
                 info.TextXAlignment = Enum.TextXAlignment.Left
@@ -1289,7 +1289,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     whitelist.Font = Enum.Font.Gotham
                     whitelist.Text = ""
                     whitelist.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    whitelist.TextSize = 14.000
+                    whitelist.TextSize = 13.000
                     whitelist.TextStrokeTransparency = 1.000
                     
                     title_2.Name = "title"
@@ -1301,7 +1301,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     title_2.Font = Enum.Font.Gotham
                     title_2.Text = "Whitelist"
                     title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    title_2.TextSize = 14.000
+                    title_2.TextSize = 13.000
                     title_2.TextStrokeTransparency = 1.000
                     
                     blacklist.Name = "blacklist"
@@ -1313,7 +1313,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     blacklist.Font = Enum.Font.Gotham
                     blacklist.Text = ""
                     blacklist.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    blacklist.TextSize = 14.000
+                    blacklist.TextSize = 13.000
                     blacklist.TextStrokeTransparency = 1.000
                     
                     title_3.Name = "title"
@@ -1325,7 +1325,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     title_3.Font = Enum.Font.Gotham
                     title_3.Text = "Blacklist"
                     title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    title_3.TextSize = 14.000
+                    title_3.TextSize = 13.000
                     title_3.TextStrokeTransparency = 1.000
                     
                     prioritize.Name = "prioritize"
@@ -1337,7 +1337,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     prioritize.Font = Enum.Font.Gotham
                     prioritize.Text = ""
                     prioritize.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    prioritize.TextSize = 14.000
+                    prioritize.TextSize = 13.000
                     prioritize.TextStrokeTransparency = 1.000
                     
                     title_4.Name = "title"
@@ -1349,7 +1349,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     title_4.Font = Enum.Font.Gotham
                     title_4.Text = "Prioritize"
                     title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    title_4.TextSize = 14.000
+                    title_4.TextSize = 13.000
                     title_4.TextStrokeTransparency = 1.000
                     
                     unprioritize.Name = "unprioritize"
@@ -1361,7 +1361,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     unprioritize.Font = Enum.Font.Gotham
                     unprioritize.Text = ""
                     unprioritize.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    unprioritize.TextSize = 14.000
+                    unprioritize.TextSize = 13.000
                     unprioritize.TextStrokeTransparency = 1.000
                     
                     title_5.Name = "title"
@@ -1373,7 +1373,7 @@ function Library:CreateWindow(title, subTitleName, color)
                     title_5.Font = Enum.Font.Gotham
                     title_5.Text = "Unprioritize"
                     title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    title_5.TextSize = 14.000
+                    title_5.TextSize = 13.000
                     title_5.TextStrokeTransparency = 1.000
 
                     whitelist.MouseButton1Click:Connect(function()
