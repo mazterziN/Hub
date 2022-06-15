@@ -872,6 +872,18 @@ function Library:CreateWindow(title, subTitleName, color)
                         title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
                         title_5.TextSize = 13.000
                         title_5.TextStrokeTransparency = 1.000
+
+                        item.MouseButton1Click:Connect(function()
+                            item.BackgroundColor3 = color
+                            for i,v in pairs(list:GetChildren()) do
+                                if (v.Name:find("item") and v ~= item) then
+                                    v.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                                end
+                            end
+                            Selected = v
+                            title_4.Text = Selected
+                            callback(Selected)
+                        end)
                     end
                 end
                 return DropTypes
