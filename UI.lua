@@ -468,7 +468,7 @@ function Kavo.CreateLib(kavName, standardTheme)
                 updateSectionFrame()
                 UpdateSize()
             local Elements = {}
-            function Elements:NewButton(bname,tipINf, callback)
+            function Elements:NewButton(bname, callback)
                 showLogo = showLogo or true
                 local ButtonFunction = {}
                 tipINf = tipINf or "Tip: Clicking this nothing will happen!"
@@ -634,7 +634,7 @@ function Kavo.CreateLib(kavName, standardTheme)
                 return ButtonFunction
             end
 
-            function Elements:NewTextBox(tname, tTip, callback)
+            function Elements:NewTextBox(tname, callback)
                 tname = tname or "Textbox"
                 tTip = tTip or "Gets a value of Textbox"
                 callback = callback or function() end
@@ -794,7 +794,7 @@ function Kavo.CreateLib(kavName, standardTheme)
                 end)()
             end 
 
-                function Elements:NewToggle(tname, nTip, callback)
+                function Elements:NewToggle(tname, callback)
                     local TogFunction = {}
                     tname = tname or "Toggle"
                     nTip = nTip or "Prints Current Toggle State"
@@ -1008,7 +1008,7 @@ function Kavo.CreateLib(kavName, standardTheme)
                     return TogFunction
             end
 
-            function Elements:NewSlider(slidInf, slidTip, maxvalue, minvalue, callback)
+            function Elements:NewSlider(slidInf, maxvalue, minvalue, callback)
                 slidInf = slidInf or "Slider"
                 slidTip = slidTip or "Slider tip here"
                 maxvalue = maxvalue or 500
@@ -1217,7 +1217,7 @@ function Kavo.CreateLib(kavName, standardTheme)
                 end)       
             end
 
-            function Elements:NewDropdown(dropname, dropinf, list, callback)
+            function Elements:NewDropdown(dropname, list, callback)
                 local DropFunction = {}
                 dropname = dropname or "Dropdown"
                 list = list or {}
@@ -1629,7 +1629,7 @@ function Kavo.CreateLib(kavName, standardTheme)
                 end
                 return DropFunction
             end
-            function Elements:NewKeybind(keytext, keyinf, first, callback)
+            function Elements:NewKeybind(keytext, first, callback)
                 keytext = keytext or "KeybindText"
                 keyinf = keyinf or "KebindInfo"
                 callback = callback or function() end
@@ -1807,7 +1807,7 @@ function Kavo.CreateLib(kavName, standardTheme)
                 end)()
             end
 
-            function Elements:NewColorPicker(colText, colInf, defcolor, callback)
+            function Elements:NewColorPicker(colText, defcolor, callback)
                 colText = colText or "ColorPicker"
                 callback = callback or function() end
                 defcolor = defcolor or Color3.fromRGB(1,1,1)
