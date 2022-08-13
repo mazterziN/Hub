@@ -1,6 +1,3 @@
-getgenv().buyItem = false
-getgenv().waveToLose = 24
-
 getgenv().map = "tokyoghoul_infinite"
 getgenv().infiniteUnits = {}
 getgenv().getUnitId = {
