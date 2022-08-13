@@ -113,7 +113,7 @@ function Place4(unitId, loc1, loc2, loc3, loc4)
 end
 
 local function AutoUpgrade()
-    if game:GetService("Workspace")["_wave_num"].Value > 9  then
+    if game:GetService("Workspace")["_wave_num"].Value > 8  then
         pcall(function()
             for i, v in next, game:GetService("Workspace")["_UNITS"]:GetChildren() do
                 if table.find(getgenv().infiniteUnits, v.Name) then
