@@ -1,4 +1,5 @@
 getgenv().map = "tokyoghoul_infinite"
+getgenv().waveToLose = 24
 getgenv().infiniteUnits = {}
 getgenv().getUnitId = {
     bulma = "{de44d3f9-a315-4132-9cd8-bee28c72b74c}",
