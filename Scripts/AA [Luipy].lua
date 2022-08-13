@@ -4,9 +4,7 @@ getgenv().infiniteUnits = {}
 getgenv().getUnitId = {
     bulma = "{de44d3f9-a315-4132-9cd8-bee28c72b74c}",
     erwin = "{433ed73e-0874-4252-a5ae-3631c4956ff6}",
-    arima = "{a8ea35a2-75c8-462b-96b2-9309a94c3ff9}"}
-getgenv().itemsToBuy = {
-    "star_remnant"
+    arima = "{a8ea35a2-75c8-462b-96b2-9309a94c3ff9}"
 }
 
 for i, v in pairs(getgenv().getUnitId) do
@@ -27,7 +25,13 @@ local function BuyItem()
                     if string.find(v.Name, getgenv().itemsToBuy[i]) then
                         s, e = string.find(v.Name, getgenv().itemsToBuy[i])
                         if table.find(getgenv().itemsToBuy, string.sub(v.Name, s, e)) then
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(v.Name)
+                            if getgenv().itemsToBuy[i] == "StarFruit" then
+                                if string.find(v.Name, "Epic") then
+                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(string.gsub(v.Name, "Epic", ""))
+                                end
+                            else
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(v.Name)
+                            end
                         end
                     end
                 end
