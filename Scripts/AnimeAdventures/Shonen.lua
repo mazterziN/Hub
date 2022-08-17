@@ -80,17 +80,17 @@ local function PlaceUnits()
             end
         -- NAMEK
         elseif getgenv().map == "namek" then
-            if game:GetService("Workspace")["_wave_num"].Value < 3 then
+            if game:GetService("Workspace")["_wave_num"].Value < 4 then
                 local u1 = CFrame.new(-2914.83544921875, 91.80620574951172, -737.7935180664062) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
                 Place1(getgenv().getUnitId["bulma"], u1)
             end
-            if game:GetService("Workspace")["_wave_num"].Value < 3 then
+            if game:GetService("Workspace")["_wave_num"].Value < 4 then
                 local u1 = CFrame.new(-2940.32861328125, 91.80620574951172, -706.9010009765625) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
                 local u2 = CFrame.new(-2942.4169921875, 91.80620574951172, -706.8063354492188) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
                 local u3 = CFrame.new(-2944.421875, 91.80620574951172, -707.0632934570312) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
                 Place3(getgenv().getUnitId["erwin"], u1, u2, u3)
             end
-            if game:GetService("Workspace")["_wave_num"].Value > 2 and game:GetService("Workspace")["_wave_num"].Value < 6 then
+            if game:GetService("Workspace")["_wave_num"].Value > 3 and game:GetService("Workspace")["_wave_num"].Value < 7 then
                 local u1 = CFrame.new(-2939.342529296875, 91.80620574951172, -703.744140625) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
                 local u2 = CFrame.new(-2941.7685546875, 91.80620574951172, -703.731689453125) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
                 local u3 = CFrame.new(-2943.829345703125, 91.80620574951172, -704.05126953125) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
