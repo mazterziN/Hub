@@ -17,18 +17,20 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
 end)
 
 local function BuyItem()
-    if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
-        for _, v in pairs(game:GetService("Workspace")["travelling_merchant"].stand.items:GetChildren()) do
-            for i = 1, #getgenv().itemsToBuy do
-                if string.find(v.Name, getgenv().itemsToBuy[i]) then
-                    s, e = string.find(v.Name, getgenv().itemsToBuy[i])
-                    if table.find(getgenv().itemsToBuy, string.sub(v.Name, s, e)) then
-                        if getgenv().itemsToBuy[i] == "StarFruit" then
-                            if string.find(v.Name, "Epic") then
-                                game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(string.gsub(v.Name, "Epic", ""))
+    if getgenv().buyItem then
+        if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
+            for _, v in pairs(game:GetService("Workspace")["travelling_merchant"].stand.items:GetChildren()) do
+                for i = 1, #getgenv().itemsToBuy do
+                    if string.find(v.Name, getgenv().itemsToBuy[i]) then
+                        s, e = string.find(v.Name, getgenv().itemsToBuy[i])
+                        if table.find(getgenv().itemsToBuy, string.sub(v.Name, s, e)) then
+                            if getgenv().itemsToBuy[i] == "StarFruit" then
+                                if string.find(v.Name, "Epic") then
+                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(string.gsub(v.Name, "Epic", ""))
+                                end
+                            else
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(v.Name)
                             end
-                        else
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(v.Name)
                         end
                     end
                 end
