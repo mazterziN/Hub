@@ -11,6 +11,10 @@ if game.PlaceId == 9049840490 then
 -- GRAND PIRATES
 elseif game.PlaceId == 9136292138 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/GrandPirates.lua"))()
+    
+-- ANIME ADVENTURES
+elseif game.PlaceId == 9136292138 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/AnimeAdventures.lua"))()
 
 -- GENERAL
 else
