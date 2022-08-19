@@ -6,7 +6,7 @@ end)
 
 -- SONIC SPEED SIMULATOR
 if game.PlaceId == 9049840490 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/AllStarTowerDefense.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/SonicSpeedSimulator.lua"))()
 
 -- GRAND PIRATES
 elseif game.PlaceId == 9136292138 then
