@@ -88,7 +88,7 @@ local function PlaceUnits()
                 Place3(getgenv().getUnitId["shanks"], u1, u2, u3)
             end
         -- TOKYO GHOUL
-        if getgenv().map == "tokyoghoul" then
+        elseif getgenv().map == "tokyoghoul" then
             if game:GetService("Workspace")["_wave_num"].Value < 3 then
                 local u1 = CFrame.new(-3016.866943359375, 58.58513259887695, -40.86863708496094) * CFrame.Angles(0, -0, -0)
                 Place1(getgenv().getUnitId["bulma"], u1)
