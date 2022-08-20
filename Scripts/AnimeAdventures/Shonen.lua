@@ -3,7 +3,8 @@ getgenv().infiniteUnits = {}
 getgenv().getUnitId = {
     bulma = "{a16aed67-5268-4b99-bc2f-8154dbdba799}",
     erwin = "{a3b0b275-7a72-4dd3-a8d5-3e2674206584}",
-    juuzou = "{3e2cfdf9-eb56-4d80-8c1a-1decbe74f4eb}"
+    juuzou = "{3e2cfdf9-eb56-4d80-8c1a-1decbe74f4eb}",
+    shanks = "{c0f1ac9b-54ad-42fd-b730-e06083035715}"
 }
 
 for i, v in pairs(getgenv().getUnitId) do
@@ -61,6 +62,31 @@ local function StartGame()
 end
 local function PlaceUnits()
     pcall(function()
+        -- BLEACH
+        if getgenv().map == "hueco" then
+            if game:GetService("Workspace")["_wave_num"].Value < 3 then
+                local u1 = CFrame.new(-154.05145263671875, 132.66400146484375, -725.6512451171875) * CFrame.Angles(0, -0, -0)
+                Place1(getgenv().getUnitId["bulma"], u1)
+            end
+            if game:GetService("Workspace")["_wave_num"].Value < 3 then
+                local u1 = CFrame.new(-188.1686248779297, 132.6639862060547, -761.1053466796875) * CFrame.Angles(0, -0, -0)
+                local u2 = CFrame.new(-187.72862243652344, 132.6639862060547, -759.0645751953125) * CFrame.Angles(0, -0, -0)
+                local u3 = CFrame.new(-187.40025329589844, 132.6639862060547, -757.1781005859375) * CFrame.Angles(0, -0, -0)
+                Place3(getgenv().getUnitId["erwin"], u1, u2, u3)
+            end
+            if game:GetService("Workspace")["_wave_num"].Value > 2 and game:GetService("Workspace")["_wave_num"].Value < 6 then
+                local u1 = CFrame.new(-190.58680725097656, 132.66400146484375, -760.87353515625) * CFrame.Angles(0, -0, -0)
+                local u2 = CFrame.new(-190.31472778320312, 132.66400146484375, -758.8143310546875) * CFrame.Angles(0, -0, -0)
+                local u3 = CFrame.new(-189.9259033203125, 132.66400146484375, -756.8162841796875) * CFrame.Angles(0, -0, -0)
+                local u4 = CFrame.new(-189.41905212402344, 132.66400146484375, -754.8712158203125) * CFrame.Angles(0, -0, -0)
+                Place4(getgenv().getUnitId["juuzou"], u1, u2, u3, u4)
+            end
+            if game:GetService("Workspace")["_wave_num"].Value > 8 and game:GetService("Workspace")["_wave_num"].Value < 11 then
+                local u1 = CFrame.new(-192.7289276123047, 132.66400146484375, -760.8720703125) * CFrame.Angles(0, -0, -0)
+                local u2 = CFrame.new(-192.354248046875, 132.66400146484375, -758.7332763671875) * CFrame.Angles(0, -0, -0)
+                local u3 = CFrame.new(-191.98509216308594, 132.66400146484375, -756.726806640625) * CFrame.Angles(0, -0, -0)
+                Place3(getgenv().getUnitId["shanks"], u1, u2, u3)
+            end
         -- TOKYO GHOUL
         if getgenv().map == "tokyoghoul" then
             if game:GetService("Workspace")["_wave_num"].Value < 3 then
@@ -132,7 +158,7 @@ function Place4(unitId, loc1, loc2, loc3, loc4)
 end
 
 local function AutoUpgrade()
-    if game:GetService("Workspace")["_wave_num"].Value > 8  then
+    if game:GetService("Workspace")["_wave_num"].Value > 9  then
         pcall(function()
             for i, v in next, game:GetService("Workspace")["_UNITS"]:GetChildren() do
                 if table.find(getgenv().infiniteUnits, v.Name) then
