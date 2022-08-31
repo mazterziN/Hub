@@ -2,7 +2,7 @@ getgenv().infiniteUnits = {}
 getgenv().getUnitId = {
     bulma = "{48ad3423-3e66-4608-9d6f-6c151a2ed436}",
     erwin = "{83eef0cd-b64f-42ac-96ae-382c9eec6513}",
-    kisuke = "{ae254445-870c-4b39-8950-5ffe67dfeca6}",
+    kisuke = "{0a8f2aad-a41e-493c-be1d-092706fc9f34}",
     katakuri = "{0662643b-af70-4fa0-b63f-888d6643dd29}"
 }
 
