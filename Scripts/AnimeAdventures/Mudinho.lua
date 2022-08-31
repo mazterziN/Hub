@@ -2,7 +2,7 @@ getgenv().infiniteUnits = {}
 getgenv().getUnitId = {
     bulma = "{48ad3423-3e66-4608-9d6f-6c151a2ed436}",
     erwin = "{83eef0cd-b64f-42ac-96ae-382c9eec6513}",
-    kisuke = "{0a8f2aad-a41e-493c-be1d-092706fc9f34}",
+    kisuke_evolved = "{0a8f2aad-a41e-493c-be1d-092706fc9f34}",
     katakuri = "{0662643b-af70-4fa0-b63f-888d6643dd29}"
 }
 
@@ -78,7 +78,7 @@ local function PlaceUnits()
                 local u2 = CFrame.new(-190.31472778320312, 132.66400146484375, -758.8143310546875) * CFrame.Angles(0, -0, -0)
                 local u3 = CFrame.new(-189.9259033203125, 132.66400146484375, -756.8162841796875) * CFrame.Angles(0, -0, -0)
                 local u4 = CFrame.new(-189.41905212402344, 132.66400146484375, -754.8712158203125) * CFrame.Angles(0, -0, -0)
-                Place4(getgenv().getUnitId["kisuke"], u1, u2, u3, u4)
+                Place4(getgenv().getUnitId["kisuke_evolved"], u1, u2, u3, u4)
             end
             if game:GetService("Workspace")["_wave_num"].Value > 8 and game:GetService("Workspace")["_wave_num"].Value < 12 then
                 local u1 = CFrame.new(-192.7289276123047, 132.66400146484375, -760.8720703125) * CFrame.Angles(0, -0, -0)
@@ -104,7 +104,7 @@ local function PlaceUnits()
                 local u2 = CFrame.new(-2997.430419921875, 58.58513641357422, -66.29708862304688) * CFrame.Angles(0, 1.5707963705062866, 0)
                 local u3 = CFrame.new(-2997.5947265625, 58.58513641357422, -63.99013900756836) * CFrame.Angles(0, 1.5707963705062866, 0)
                 local u4 = CFrame.new(-2997.591064453125, 58.58513641357422, -61.75052261352539) * CFrame.Angles(0, 1.5707963705062866, 0)
-                Place4(getgenv().getUnitId["kisuke"], u1, u2, u3, u4)
+                Place4(getgenv().getUnitId["kisuke_evolved"], u1, u2, u3, u4)
             end
         -- NAMEK
         elseif getgenv().map == "namek" then
@@ -123,7 +123,7 @@ local function PlaceUnits()
                 local u2 = CFrame.new(-2941.7685546875, 91.80620574951172, -703.731689453125) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
                 local u3 = CFrame.new(-2943.829345703125, 91.80620574951172, -704.05126953125) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
                 local u4 = CFrame.new(-2945.931396484375, 91.80620574951172, -704.1384887695312) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
-                Place4(getgenv().getUnitId["kisuke"], u1, u2, u3, u4)
+                Place4(getgenv().getUnitId["kisuke_evolved"], u1, u2, u3, u4)
             end
         end
     end)
