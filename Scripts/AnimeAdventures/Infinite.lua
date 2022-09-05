@@ -18,40 +18,48 @@ end)
 
 local function BuyItem()
     if getgenv().buyItem then
-        if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
-            for _, v in pairs(game:GetService("Workspace")["travelling_merchant"].stand.items:GetChildren()) do
-                for i = 1, #getgenv().itemsToBuy do
-                    if string.find(v.Name, getgenv().itemsToBuy[i]) then
-                        s, e = string.find(v.Name, getgenv().itemsToBuy[i])
-                        if table.find(getgenv().itemsToBuy, string.sub(v.Name, s, e)) then
-                            if getgenv().itemsToBuy[i] == "StarFruit" then
-                                if string.find(v.Name, "Epic") then
-                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(string.gsub(v.Name, "Epic", ""))
+        pcall(function()
+            if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
+                for _, v in pairs(game:GetService("Workspace")["travelling_merchant"].stand.items:GetChildren()) do
+                    for i = 1, #getgenv().itemsToBuy do
+                        if string.find(v.Name, getgenv().itemsToBuy[i]) then
+                            s, e = string.find(v.Name, getgenv().itemsToBuy[i])
+                            if table.find(getgenv().itemsToBuy, string.sub(v.Name, s, e)) then
+                                if getgenv().itemsToBuy[i] == "StarFruit" then
+                                    if string.find(v.Name, "Epic") then
+                                        game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(string.gsub(v.Name, "Epic", ""))
+                                    end
+                                else
+                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(v.Name)
                                 end
-                            else
-                                game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(v.Name)
                             end
                         end
                     end
                 end
             end
-        end
+        end)
     end
 end
 local function Join()
-    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer("_lobbytemplategreen6")
+    pcall(function()
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer("_lobbytemplategreen6")
+    end)
 end
 local function Create()
-    local args = {
-        [1] = "_lobbytemplategreen6",
-        [2] = getgenv().map .."_infinite",
-        [3] = true,
-        [4] = "Hard"
-    }
-    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+    pcall(function()
+        local args = {
+            [1] = "_lobbytemplategreen6",
+            [2] = getgenv().map .."_infinite",
+            [3] = true,
+            [4] = "Hard"
+        }
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+    end)
 end
 local function StartTP()
-    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer("_lobbytemplategreen6")
+    pcall(function()
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer("_lobbytemplategreen6")
+    end)
 end
 
 local function StartGame()
@@ -259,9 +267,9 @@ if game.PlaceId == 8304191830 then
         BuyItem()
         task.wait(1)
         Join()
-        task.wait(1)
+        task.wait(2)
         Create()
-        task.wait(1)
+        task.wait(2)
         StartTP()
         task.wait(5)
     end
