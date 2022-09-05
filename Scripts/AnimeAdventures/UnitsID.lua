@@ -21,7 +21,7 @@ elseif game.Players.LocalPlayer.UserId == 1022210737 then
     air = ""
 
 -- SHONEN
-elseif game.Players.LocalPlayer.UserId == 0 then
+elseif game.Players.LocalPlayer.UserId == 1934778943 then
     money = "{a16aed67-5268-4b99-bc2f-8154dbdba799}"
     buff = "{a3b0b275-7a72-4dd3-a8d5-3e2674206584}"
     primary = "{3e2cfdf9-eb56-4d80-8c1a-1decbe74f4eb}"
