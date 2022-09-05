@@ -1,18 +1,16 @@
 getgenv().map = "hxhant"
 getgenv().buyItem = true
-getgenv().itemsToBuy = {"star_remnant", "kite_dice"}
+getgenv().itemsToBuy = {"star_remnant", "kite_dice", "gungi_set", "netero_rose", "pitou_puppet", "gon_contract"}
 getgenv().waveToLose = 24
 
 repeat wait() until game:IsLoaded()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/AnimeAdventures/UnitsID.lua"))()
-
 getgenv().getUnitId = {
-    money = _G.Money,
-    buff = _G.Buff,
-    primary = _G.Primary,
-    secondary = _G.Secondary,
-    air = _G.Air
+    money = uMoney,
+    buff = uBuff,
+    primary = uPrimary,
+    secondary = uSecondary,
+    hill = uHill
 }
 
 game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -187,7 +185,7 @@ function Place4(unitId, loc1, loc2, loc3, loc4)
 end
 
 local function AutoUpgrade()
-    if game:GetService("Workspace")["_wave_num"].Value > 9  then
+    if game:GetService("Workspace")["_wave_num"].Value > 8  then
         pcall(function()
             for i, v in next, game:GetService("Workspace")["_UNITS"]:GetChildren() do
                 if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
