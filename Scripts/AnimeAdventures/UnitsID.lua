@@ -29,7 +29,7 @@ elseif game.Players.LocalPlayer.UserId == 0 then
     air = ""
 
 -- MUDINHO
-elseif game.Players.LocalPlayer.UserId == 0 then
+elseif game.Players.LocalPlayer.UserId == 113452795 then
     money = "{48ad3423-3e66-4608-9d6f-6c151a2ed436}"
     buff = "{83eef0cd-b64f-42ac-96ae-382c9eec6513}"
     primary = "{0a8f2aad-a41e-493c-be1d-092706fc9f34}"
