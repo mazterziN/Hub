@@ -36,3 +36,9 @@ elseif game.Players.LocalPlayer.UserId == 113452795 then
     uSecondary = "{0a8f2aad-a41e-493c-be1d-092706fc9f34}"
     uHill = ""
 end
+
+getgenv().uMoney = uMoney
+getgenv().uBuff = uBuff
+getgenv().uPrimary = uPrimary
+getgenv().uSecondary = uSecondary
+getgenv().uHill = uHill
