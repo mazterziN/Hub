@@ -1,9 +1,7 @@
 local Units = require(game.ReplicatedStorage.src.Loader).load_data(script, "Units")
+_G.UnitsID = {}
 
 if game.PlaceId == 8304191830 then
-
-    _G.UnitsID = {}
-
     for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.collection.grid.List.Outer.UnitFrames:GetChildren()) do
         if v:IsA("ImageButton") then
             if v.Equipped.Visible == true then
