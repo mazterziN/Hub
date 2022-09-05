@@ -80,7 +80,7 @@ local function PlaceUnits()
                 u4 = CFrame.new(-184.6988525390625, 23.01263999938965, 2957.416015625) * CFrame.Angles(0, -0, -0)
                 Place4(getgenv().getUnitId["primary"], u1, u2, u3, u4)
             end
-            if game:GetService("Workspace")["_wave_num"].Value > 6 and game:GetService("Workspace")["_wave_num"].Value < 12 then
+            if game:GetService("Workspace")["_wave_num"].Value > 6 and game:GetService("Workspace")["_wave_num"].Value < 16 then
                 u1 = CFrame.new(-191.62603759765625, 23.01263999938965, 2962.73974609375) * CFrame.Angles(0, -0, -0)
                 u2 = CFrame.new(-189.68350219726562, 23.01263999938965, 2962.099609375) * CFrame.Angles(0, -0, -0)
                 u3 = CFrame.new(-187.8390350341797, 23.01263999938965, 2961.35986328125) * CFrame.Angles(0, -0, -0)
