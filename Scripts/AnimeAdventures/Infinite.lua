@@ -249,7 +249,7 @@ local function AutoSell()
 end
 local function TeleportLobby()
     if game:GetService("Workspace")["_DATA"].GameFinished.Value == true then
-        task.wait(5)
+        task.wait(2)
         game:GetService("ReplicatedStorage").endpoints.client_to_server.teleport_back_to_lobby:InvokeServer()
     end
 end 
@@ -270,24 +270,12 @@ elseif game.PlaceId == 8349889591 then
     task.wait(20)
     game.Players.LocalPlayer.PlayerGui:WaitForChild("MessageGui").Enabled = false
     _G.a = true 
-    while _G.a do
-        task.wait()
-        if game.Players.LocalPlayer.PlayerGui.ResultsUI.Enabled == true then
-            local button = game.Players.LocalPlayer.PlayerGui.ResultsUI.Holder.Buttons.Next
-            local events = {"MouseButton1Click", "MouseButton1Down", "Activated"}
-            for i,v in pairs(events) do
-                for i,v in pairs(getconnections(button[v])) do
-                    v:Fire()
-                end
-            end
-        else
-            task.wait()
-            StartGame()
-            PlaceUnits()
-            AutoUpgrade()
-            AutoBuff()
-            AutoSell()
-            TeleportLobby()
-        end
+    while _G.a and task.wait() do
+        StartGame()
+        PlaceUnits()
+        AutoUpgrade()
+        AutoBuff()
+        AutoSell()
+        TeleportLobby()
     end
 end
