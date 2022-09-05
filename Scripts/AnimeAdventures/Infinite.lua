@@ -1,3 +1,8 @@
+getgenv().map = "hxhant"
+getgenv().buyItem = true
+getgenv().itemsToBuy = {"star_remnant", "kite_dice"}
+getgenv().waveToLose = 24
+
 repeat wait() until game:IsLoaded()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/AnimeAdventures/UnitsID.lua"))()
@@ -6,7 +11,7 @@ getgenv().getUnitId = {
     money = _G.Money,
     buff = _G.Buff,
     primary = _G.Primary,
-    secondary = _G.Secondary
+    secondary = _G.Secondary,
     air = _G.Air
 }
 
