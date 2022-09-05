@@ -1,8 +1,3 @@
-getgenv().map = "hxhant"
-getgenv().buyItem = true
-getgenv().itemsToBuy = {"star_remnant", "kite_dice", "gungi_set", "netero_rose", "pitou_puppet", "gon_contract"}
-getgenv().waveToLose = 24
-
 repeat wait() until game:IsLoaded()
 
 getgenv().getUnitId = {
