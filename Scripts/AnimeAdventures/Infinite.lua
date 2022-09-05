@@ -195,15 +195,19 @@ end
 function Place4(unitId, loc1, loc2, loc3, loc4)
     local UnitCFrame = loc1
     game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, UnitCFrame)
+    wait()
 
     local UnitCFrame = loc2
     game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, UnitCFrame)
+    wait()
 
     local UnitCFrame = loc3
     game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, UnitCFrame)
+    wait()
 
     local UnitCFrame = loc4
     game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, UnitCFrame)
+    wait()
 end
 
 local function AutoUpgrade()
