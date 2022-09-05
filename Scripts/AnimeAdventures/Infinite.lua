@@ -7,7 +7,9 @@ getgenv().getUnitId = {
     buff = getgenv().uBuff,
     primary = getgenv().uPrimary,
     secondary = getgenv().uSecondary,
-    hill = getgenv().uHill
+    tertiary = getgenv().uTertiary,
+    hill = getgenv().uHill,
+    hill2 = getgenv().uHill2
 }
 
 game:GetService("Players").LocalPlayer.Idled:connect(function()
