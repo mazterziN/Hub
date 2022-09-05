@@ -1,5 +1,7 @@
 repeat wait() until game:IsLoaded()
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/AnimeAdventures/UnitsID.lua"))()
+
 getgenv().getUnitId = {
     money = uMoney,
     buff = uBuff,
