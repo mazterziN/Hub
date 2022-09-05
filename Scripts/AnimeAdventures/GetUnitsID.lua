@@ -22,6 +22,5 @@ if game.PlaceId == 8304191830 then
             end
         end
     end
-
     setclipboard(table.concat(_G.UnitsID, "\n", 1, table.getn(_G.UnitsID)))
 end
