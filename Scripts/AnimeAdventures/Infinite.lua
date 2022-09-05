@@ -88,10 +88,10 @@ local function PlaceUnits()
                 Place4(getgenv().getUnitId["secondary"], u1, u2, u3, u4)
             end
             if game:GetService("Workspace")["_wave_num"].Value > 10 and game:GetService("Workspace")["_wave_num"].Value < 20 then
-                u1 = CFrame.new(-193.37574768066406, 23.01263999938965, 2959.46435546875) * CFrame.Angles(0, -0, -0)
-                u2 = CFrame.new(-193.87255859375, 23.012638092041016, 2961.42822265625) * CFrame.Angles(0, -0, -0)
-                u3 = CFrame.new(-194.0655975341797, 23.012638092041016, 2963.357177734375) * CFrame.Angles(0, -0, -0)
-                u4 = CFrame.new(-195.19866943359375, 23.01263999938965, 2958.51904296875) * CFrame.Angles(0, -0, -0)
+                u1 = CFrame.new(-193.2178955078125, 23.01263999938965, 2959.273681640625) * CFrame.Angles(0, -0, -0)
+                u2 = CFrame.new(-193.9064178466797, 23.01263999938965, 2961.307373046875) * CFrame.Angles(0, -0, -0)
+                u3 = CFrame.new(-195.5329132080078, 23.01263999938965, 2958.85205078125) * CFrame.Angles(0, -0, -0)
+                u4 = CFrame.new(-196.47361755371094, 23.01263999938965, 2961.348388671875) * CFrame.Angles(0, -0, -0)
                 Place4(getgenv().getUnitId["tertiary"], u1, u2, u3, u4)
             end
             if game:GetService("Workspace")["_wave_num"].Value > 10 and game:GetService("Workspace")["_wave_num"].Value < 20 then
