@@ -61,31 +61,46 @@ local function StartGame()
 end
 local function PlaceUnits()
     pcall(function()
-        -- HxH
+        -- HxH  
         if getgenv().map == "hxhant" then
             if game:GetService("Workspace")["_wave_num"].Value < 3 then
                 u1 = CFrame.new(-166.13230895996094, 23.08652687072754, 2939.481201171875) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
                 Place1(getgenv().getUnitId["money"], u1)
             end
             if game:GetService("Workspace")["_wave_num"].Value < 3 then
-                u1 = CFrame.new(-201.57717895507812, 23.01263999938965, 2960.910888671875) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
-                u2 = CFrame.new(-199.13308715820312, 23.01263999938965, 2960.990966796875) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
-                u3 = CFrame.new(-196.98342895507812, 23.01263999938965, 2960.8310546875) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
+                u1 = CFrame.new(-191.25643920898438, 23.01263999938965, 2958.580322265625) * CFrame.Angles(0, -0, -0)
+                u2 = CFrame.new(-189.54495239257812, 23.01263999938965, 2957.566162109375) * CFrame.Angles(0, -0, -0)
+                u3 = CFrame.new(-187.8311309814453, 23.01263999938965, 2956.703857421875) * CFrame.Angles(0, -0, -0)
                 Place3(getgenv().getUnitId["buff"], u1, u2, u3)
             end
             if game:GetService("Workspace")["_wave_num"].Value > 2 and game:GetService("Workspace")["_wave_num"].Value < 6 then
-                u1 = CFrame.new(-200.44754028320312, 23.01263999938965, 2963.313720703125) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
-                u2 = CFrame.new(-198.4202117919922, 23.01263999938965, 2963.322998046875) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
-                u3 = CFrame.new(-196.4708709716797, 23.01263999938965, 2963.495361328125) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
-                u4 = CFrame.new(-194.35357666015625, 23.01263999938965, 2963.32275390625) * CFrame.Angles(0, -0, -0)
+                u1 = CFrame.new(-191.16966247558594, 23.01263999938965, 2960.654541015625) * CFrame.Angles(0, -0, -0)
+                u2 = CFrame.new(-188.9988250732422, 23.01263999938965, 2959.70068359375) * CFrame.Angles(0, -0, -0)
+                u3 = CFrame.new(-186.71351623535156, 23.01263999938965, 2958.539794921875) * CFrame.Angles(0, -0, -0)
+                u4 = CFrame.new(-184.6988525390625, 23.01263999938965, 2957.416015625) * CFrame.Angles(0, -0, -0)
                 Place4(getgenv().getUnitId["primary"], u1, u2, u3, u4)
             end
             if game:GetService("Workspace")["_wave_num"].Value > 6 and game:GetService("Workspace")["_wave_num"].Value < 12 then
-                u1 = CFrame.new(-196.465576171875, 23.01263999938965, 2966.093017578125) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
-                u2 = CFrame.new(-198.77752685546875, 23.01263999938965, 2965.996826171875) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
-                u3 = CFrame.new(-200.83712768554688, 23.01263999938965, 2965.957763671875) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
-                u4 = CFrame.new(-200.13987731933594, 23.01263999938965, 2967.967529296875) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
+                u1 = CFrame.new(-191.62603759765625, 23.01263999938965, 2962.73974609375) * CFrame.Angles(0, -0, -0)
+                u2 = CFrame.new(-189.68350219726562, 23.01263999938965, 2962.099609375) * CFrame.Angles(0, -0, -0)
+                u3 = CFrame.new(-187.8390350341797, 23.01263999938965, 2961.35986328125) * CFrame.Angles(0, -0, -0)
+                u4 = CFrame.new(-185.89329528808594, 23.01263999938965, 2960.667724609375) * CFrame.Angles(0, -0, -0)
                 Place4(getgenv().getUnitId["secondary"], u1, u2, u3, u4)
+            end
+            if game:GetService("Workspace")["_wave_num"].Value > 10 and game:GetService("Workspace")["_wave_num"].Value < 20 then
+                u1 = CFrame.new(-193.37574768066406, 23.01263999938965, 2959.46435546875) * CFrame.Angles(0, -0, -0)
+                u2 = CFrame.new(-193.87255859375, 23.012638092041016, 2961.42822265625) * CFrame.Angles(0, -0, -0)
+                u3 = CFrame.new(-194.0655975341797, 23.012638092041016, 2963.357177734375) * CFrame.Angles(0, -0, -0)
+                u4 = CFrame.new(-195.19866943359375, 23.01263999938965, 2958.51904296875) * CFrame.Angles(0, -0, -0)
+                Place4(getgenv().getUnitId["tertiary"], u1, u2, u3, u4)
+            end
+            if game:GetService("Workspace")["_wave_num"].Value > 10 and game:GetService("Workspace")["_wave_num"].Value < 20 then
+                u1 = CFrame.new(-193.25323486328125, 27.207609176635742, 2957.080322265625) * CFrame.Angles(0, -0, -0)
+                u2 = CFrame.new(-191.33612060546875, 27.207609176635742, 2956.458740234375) * CFrame.Angles(0, -0, -0)
+                u3 = CFrame.new(-189.900390625, 27.207609176635742, 2955.205322265625) * CFrame.Angles(0, -0, -0)
+                u4 = CFrame.new(-188.2447052001953, 27.207609176635742, 2954.1806640625) * CFrame.Angles(0, -0, -0)
+                u5 = CFrame.new(-191.97756958007812, 27.207609176635742, 2954.621337890625) * CFrame.Angles(0, -0, -0)
+                Place4(getgenv().getUnitId["hill"], u1, u2, u3, u4)
             end
         -- BLEACH
         elseif getgenv().map == "hueco" then
