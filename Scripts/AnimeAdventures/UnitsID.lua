@@ -12,7 +12,7 @@ if game.Players.LocalPlayer.UserId == 1340755305 then
     uBuff = "{8c4e6861-5948-4d4f-b0d7-e31e8126d4e7}"
     uPrimary = "{629b8451-5bc7-41ec-8a43-420e79d2bf8f}"
     uSecondary = "{672f9c81-f1a3-4635-b91c-09f6300a0f2e}"
-    uTertiary = ""
+    uTertiary = "{661683f5-c508-484c-ab4b-4bb0023d68d2}"
     uHill = ""
     uHill2 = ""
 
@@ -42,7 +42,7 @@ elseif game.Players.LocalPlayer.UserId == 113452795 then
     uBuff = "{83eef0cd-b64f-42ac-96ae-382c9eec6513}"
     uPrimary = "{7baafd93-ba88-40c5-96d3-1ec424403403}"
     uSecondary = "{0a8f2aad-a41e-493c-be1d-092706fc9f34}"
-    uTertiary = ""
+    uTertiary = "{d6e68563-cf31-47f4-a2ac-2fa2840f61a8}"
     uHill = ""
     uHill2 = ""
 end
