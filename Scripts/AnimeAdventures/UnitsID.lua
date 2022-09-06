@@ -30,10 +30,10 @@ elseif game.Players.LocalPlayer.UserId == 1022210737 then
 elseif game.Players.LocalPlayer.UserId == 1934778943 then
     uMoney = "{a16aed67-5268-4b99-bc2f-8154dbdba799}"
     uBuff = "{a3b0b275-7a72-4dd3-a8d5-3e2674206584}"
-    uPrimary = "{3e2cfdf9-eb56-4d80-8c1a-1decbe74f4eb}"
-    uSecondary = "{b4ba835e-f929-455c-b37f-8629c8b6f136}"
-    uTertiary = ""
-    uHill = ""
+    uPrimary = "{b4ba835e-f929-455c-b37f-8629c8b6f136}"
+    uSecondary = "{ea36a184-632d-4304-9f16-7c6e5a99a4f0}"
+    uTertiary = "{b5cd706d-a702-4595-8375-369a882edd45}"
+    uHill = "{e3aeca32-1314-4ed3-a601-7f0c0f2a507e}"
     uHill2 = ""
 
 -- MUDINHO
