@@ -20,10 +20,10 @@ if game.Players.LocalPlayer.UserId == 1340755305 then
 elseif game.Players.LocalPlayer.UserId == 1022210737 then
     uMoney = "{de44d3f9-a315-4132-9cd8-bee28c72b74c}"
     uBuff = "{433ed73e-0874-4252-a5ae-3631c4956ff6}"
-    uPrimary = "{a8ea35a2-75c8-462b-96b2-9309a94c3ff9}"
+    uPrimary = "{d34acf47-2bd7-4dff-a44e-33e4ad0aeed3}"
     uSecondary = "{99f42942-adda-4759-9e43-0b8757dc8528}"
-    uTertiary = ""
-    uHill = ""
+    uTertiary = "{42a36463-ebb8-44a9-9d96-c284da9789ce}"
+    uHill = "{8d39cc4d-d5ee-43e7-abc4-48fc047142cc}"
     uHill2 = ""
 
 -- SHONEN
