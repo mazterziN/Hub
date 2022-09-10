@@ -29,7 +29,7 @@ elseif game.Players.LocalPlayer.UserId == 1022210737 then
 -- SHONEN
 elseif game.Players.LocalPlayer.UserId == 1934778943 then
     uMoney = "{a16aed67-5268-4b99-bc2f-8154dbdba799}"
-    uBuff = "{a3b0b275-7a72-4dd3-a8d5-3e2674206584}"
+    uBuff = "{5a625a6b-27e5-4483-b690-8cbcafb87534}"
     uPrimary = "{b4ba835e-f929-455c-b37f-8629c8b6f136}"
     uSecondary = "{ea36a184-632d-4304-9f16-7c6e5a99a4f0}"
     uTertiary = "{b5cd706d-a702-4595-8375-369a882edd45}"
@@ -43,6 +43,16 @@ elseif game.Players.LocalPlayer.UserId == 113452795 then
     uPrimary = "{7baafd93-ba88-40c5-96d3-1ec424403403}"
     uSecondary = "{0a8f2aad-a41e-493c-be1d-092706fc9f34}"
     uTertiary = "{d6e68563-cf31-47f4-a2ac-2fa2840f61a8}"
+    uHill = ""
+    uHill2 = ""
+
+-- NINJA
+elseif game.Players.LocalPlayer.UserId == 2427591310 then
+    uMoney = "{63a61e57-13f5-4edc-bc64-1fc7f62cb877}"
+    uBuff = "{e5d75ff5-5d6e-403b-a6d5-8ba544e87f3d}"
+    uPrimary = "{e6498013-2f38-40f5-a168-006a0a4f05cd}"
+    uSecondary = "{ce2e8a9d-360f-424a-8e1f-e7f712bd5754}"
+    uTertiary = "{ee6adf0a-a848-4226-bee1-3e8df7854308}"
     uHill = ""
     uHill2 = ""
 end
