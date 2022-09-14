@@ -17,7 +17,7 @@ elseif game.PlaceId == 8304191830 or game.PlaceId == 8349889591 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/AnimeAdventures/Hub.lua"))()
     
 -- ONE PUNCH FIGHTERS
-elseif game.PlaceId == 8304191830 or game.PlaceId == 8349889591 then
+elseif game.PlaceId == 10524502174 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/OnePunchFighters.lua"))()
 
 -- GENERAL
