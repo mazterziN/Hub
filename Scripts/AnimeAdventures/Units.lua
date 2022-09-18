@@ -50,9 +50,9 @@ elseif game.Players.LocalPlayer.UserId == 113452795 then
 elseif game.Players.LocalPlayer.UserId == 2427591310 then
     uMoney = "{63a61e57-13f5-4edc-bc64-1fc7f62cb877}"
     uBuff = "{e5d75ff5-5d6e-403b-a6d5-8ba544e87f3d}"
-    uPrimary = "{e6498013-2f38-40f5-a168-006a0a4f05cd}"
-    uSecondary = "{ce2e8a9d-360f-424a-8e1f-e7f712bd5754}"
-    uTertiary = "{ee6adf0a-a848-4226-bee1-3e8df7854308}"
+    uPrimary = "{c377a37d-0596-4f21-b029-7b8e1c52ddc6}"
+    uSecondary = "{2eea1d50-f8e9-49de-995d-97c5d4477c2a}"
+    uTertiary = "{19a24a3c-8a2a-4904-8e65-8e3096a1c59c}"
     uHill = ""
     uHill2 = ""
 end
