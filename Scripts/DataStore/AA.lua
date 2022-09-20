@@ -43,4 +43,23 @@ local AA = {}
         return m
     end
 
+    function AA.Codes()
+        return {
+            "HUNTER",
+            "QUESTFIX",
+            "HOLLOW",
+            "MUGENTRAIN",
+            "GHOUL",
+            "subtomaokuma",
+            "TWOMILLION",
+            "TOADBOIGAMING",
+            "SubToKelvingts",
+            "SubToBlamspot",
+            "FictioNTheFirst",
+            "KingLuffy",
+            "Cursed",
+            "noclypso"
+        }
+    end
+
 return AA
