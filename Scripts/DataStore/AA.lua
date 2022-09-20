@@ -1,12 +1,14 @@
-_G.MazterWhitelist = {
-    1340755305, -- MAZTER
-    1022210737, -- LUIPY
-    1934778943, -- SHONEN
-    113452795, -- MUDINHO
-    2427591310 -- NINJA
-}
-
 local AA = {}
+
+    function AA.Whitelist()
+        return {
+            1340755305, -- MAZTER
+            1022210737, -- LUIPY
+            1934778943, -- SHONEN
+            113452795, -- MUDINHO
+            2427591310 -- NINJA
+        }
+    end
 
     function AA.GetMaps()
         return {
