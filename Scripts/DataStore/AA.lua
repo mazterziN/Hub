@@ -52,37 +52,37 @@ function AA.PlaceUnits()
             if game:GetService("Workspace")["_wave_num"].Value < 3 then
                 uID = string.split(_G.Config.Units["u1"], " ")
                 for i = 1, 1 do
-                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u1", i))
                 end
             end
             if game:GetService("Workspace")["_wave_num"].Value < 3 then
                 uID = string.split(_G.Config.Units["u2"], " ")
                 for i = 1, 3 do
-                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u2", i))
                 end
             end
             if game:GetService("Workspace")["_wave_num"].Value > 2 and game:GetService("Workspace")["_wave_num"].Value < 6 then
                 uID = string.split(_G.Config.Units["u3"], " ")
                 for i = 1, 4 do
-                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u3", i))
                 end
             end
             if game:GetService("Workspace")["_wave_num"].Value > 6 and game:GetService("Workspace")["_wave_num"].Value < 16 then
                 uID = string.split(_G.Config.Units["u4"], " ")
                 for i = 1, 4 do
-                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u4", i))
                 end
             end
             if game:GetService("Workspace")["_wave_num"].Value > 10 and game:GetService("Workspace")["_wave_num"].Value < 20 then
                 uID = string.split(_G.Config.Units["u5"], " ")
                 for i = 1, 4 do
-                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u5", i))
                 end
             end
             if game:GetService("Workspace")["_wave_num"].Value > 10 and game:GetService("Workspace")["_wave_num"].Value < 20 then
-                uID = string.split(_G.Config.Units["u6"], " ")
+                uID = string.split(_G.Config.Units["u6"], " ")  
                 for i = 1, 5 do
-                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u6", i))
                 end
             end
         -- BLEACH
@@ -164,7 +164,6 @@ function PlaceToLoc(unitId, loc1)
 end
 function UnitPos(map, unit, pos)
     local UnitPos = {
-
         ["hxhant"] = {
             u1 = {
                 CFrame.new(-166.13230895996094, 23.08652687072754, 2939.481201171875) * CFrame.Angles(0, -0, -0)},
@@ -194,8 +193,6 @@ function UnitPos(map, unit, pos)
                 CFrame.new(-188.2447052001953, 27.207609176635742, 2954.1806640625) * CFrame.Angles(0, -0, -0),
                 CFrame.new(-191.97756958007812, 27.207609176635742, 2954.621337890625) * CFrame.Angles(0, -0, -0)}
         }
-
-        
     }
     return UnitPos[map][unit][pos]
 end
