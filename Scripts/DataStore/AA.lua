@@ -47,52 +47,43 @@ end
 
 function AA.PlaceUnits()
     pcall(function()
-        -- HxH  
+        -- HxH
         if _G.Config.Map == "hxhant" then
             if game:GetService("Workspace")["_wave_num"].Value < 3 then
                 uID = string.split(_G.Config.Units["u1"], " ")
-                u1 = CFrame.new(-166.13230895996094, 23.08652687072754, 2939.481201171875) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
-                PlaceToLoc(uID[3], u1)
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                end
             end
             if game:GetService("Workspace")["_wave_num"].Value < 3 then
                 uID = string.split(_G.Config.Units["u2"], " ")
-                u1 = CFrame.new(-191.25643920898438, 23.01263999938965, 2958.580322265625) * CFrame.Angles(0, -0, -0)
-                u2 = CFrame.new(-189.54495239257812, 23.01263999938965, 2957.566162109375) * CFrame.Angles(0, -0, -0)
-                u3 = CFrame.new(-187.8311309814453, 23.01263999938965, 2956.703857421875) * CFrame.Angles(0, -0, -0)
-                PlaceToLoc(uID[3], u1, u2, u3)
+                for i = 1, 3 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                end
             end
             if game:GetService("Workspace")["_wave_num"].Value > 2 and game:GetService("Workspace")["_wave_num"].Value < 6 then
                 uID = string.split(_G.Config.Units["u3"], " ")
-                u1 = CFrame.new(-191.16966247558594, 23.01263999938965, 2960.654541015625) * CFrame.Angles(0, -0, -0)
-                u2 = CFrame.new(-188.9988250732422, 23.01263999938965, 2959.70068359375) * CFrame.Angles(0, -0, -0)
-                u3 = CFrame.new(-186.71351623535156, 23.01263999938965, 2958.539794921875) * CFrame.Angles(0, -0, -0)
-                u4 = CFrame.new(-184.6988525390625, 23.01263999938965, 2957.416015625) * CFrame.Angles(0, -0, -0)
-                PlaceToLoc(uID[3], u1, u2, u3, u4)
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                end
             end
             if game:GetService("Workspace")["_wave_num"].Value > 6 and game:GetService("Workspace")["_wave_num"].Value < 16 then
                 uID = string.split(_G.Config.Units["u4"], " ")
-                u1 = CFrame.new(-191.62603759765625, 23.01263999938965, 2962.73974609375) * CFrame.Angles(0, -0, -0)
-                u2 = CFrame.new(-189.68350219726562, 23.01263999938965, 2962.099609375) * CFrame.Angles(0, -0, -0)
-                u3 = CFrame.new(-187.8390350341797, 23.01263999938965, 2961.35986328125) * CFrame.Angles(0, -0, -0)
-                u4 = CFrame.new(-185.89329528808594, 23.01263999938965, 2960.667724609375) * CFrame.Angles(0, -0, -0)
-                PlaceToLoc(uID[3], u1, u2, u3, u4)
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                end
             end
             if game:GetService("Workspace")["_wave_num"].Value > 10 and game:GetService("Workspace")["_wave_num"].Value < 20 then
                 uID = string.split(_G.Config.Units["u5"], " ")
-                u1 = CFrame.new(-193.2178955078125, 23.01263999938965, 2959.273681640625) * CFrame.Angles(0, -0, -0)
-                u2 = CFrame.new(-193.9064178466797, 23.01263999938965, 2961.307373046875) * CFrame.Angles(0, -0, -0)
-                u3 = CFrame.new(-195.5329132080078, 23.01263999938965, 2958.85205078125) * CFrame.Angles(0, -0, -0)
-                u4 = CFrame.new(-196.47361755371094, 23.01263999938965, 2961.348388671875) * CFrame.Angles(0, -0, -0)
-                PlaceToLoc(uID[3], u1, u2, u3, u4)
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                end
             end
             if game:GetService("Workspace")["_wave_num"].Value > 10 and game:GetService("Workspace")["_wave_num"].Value < 20 then
                 uID = string.split(_G.Config.Units["u6"], " ")
-                u1 = CFrame.new(-193.25323486328125, 27.207609176635742, 2957.080322265625) * CFrame.Angles(0, -0, -0)
-                u2 = CFrame.new(-191.33612060546875, 27.207609176635742, 2956.458740234375) * CFrame.Angles(0, -0, -0)
-                u3 = CFrame.new(-189.900390625, 27.207609176635742, 2955.205322265625) * CFrame.Angles(0, -0, -0)
-                u4 = CFrame.new(-188.2447052001953, 27.207609176635742, 2954.1806640625) * CFrame.Angles(0, -0, -0)
-                u5 = CFrame.new(-191.97756958007812, 27.207609176635742, 2954.621337890625) * CFrame.Angles(0, -0, -0)
-                PlaceToLoc(uID[3], u1, u2, u3, u4, u5)
+                for i = 1, 5 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u"..i, i))
+                end
             end
         -- BLEACH
         elseif _G.Config.Map == "hueco" then
@@ -165,24 +156,48 @@ function AA.PlaceUnits()
         end
     end)
 end
-function PlaceToLoc(unitId, loc1, loc2, loc3, loc4, loc5)
+function PlaceToLoc(unitId, loc1)
     if game:GetService("Workspace")["_wave_num"].Value < _G.Config.WaveToLose then
         local uPos = loc1
         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, uPos)
-        wait()
-        local uPos = loc2
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, uPos)
-        wait()
-        local uPos = loc3
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, uPos)
-        wait()
-        local uPos = loc4
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, uPos)
-        wait()
-        local uPos = loc5
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, uPos)
-        wait()
     end
+end
+function UnitPos(map, unit, pos)
+    local UnitPos = {
+
+        ["hxhant"] = {
+            u1 = {
+                CFrame.new(-166.13230895996094, 23.08652687072754, 2939.481201171875) * CFrame.Angles(0, -0, -0)},
+            u2 = {
+                CFrame.new(-191.25643920898438, 23.01263999938965, 2958.580322265625) * CFrame.Angles(0, -0, -0),
+                CFrame.new(-189.54495239257812, 23.01263999938965, 2957.566162109375) * CFrame.Angles(0, -0, -0),
+                CFrame.new(-187.8311309814453, 23.01263999938965, 2956.703857421875) * CFrame.Angles(0, -0, -0)},
+            u3 = {
+                CFrame.new(-191.16966247558594, 23.01263999938965, 2960.654541015625) * CFrame.Angles(0, -0, -0),
+                CFrame.new(-188.9988250732422, 23.01263999938965, 2959.70068359375) * CFrame.Angles(0, -0, -0),
+                CFrame.new(-186.71351623535156, 23.01263999938965, 2958.539794921875) * CFrame.Angles(0, -0, -0),
+                CFrame.new(-184.6988525390625, 23.01263999938965, 2957.416015625) * CFrame.Angles(0, -0, -0)},
+            u4 = {
+                CFrame.new(-191.62603759765625, 23.01263999938965, 2962.73974609375) * CFrame.Angles(0, -0, -0)
+                CFrame.new(-189.68350219726562, 23.01263999938965, 2962.099609375) * CFrame.Angles(0, -0, -0)
+                CFrame.new(-187.8390350341797, 23.01263999938965, 2961.35986328125) * CFrame.Angles(0, -0, -0)
+                CFrame.new(-185.89329528808594, 23.01263999938965, 2960.667724609375) * CFrame.Angles(0, -0, -0)},
+            u5 = {
+                u1 = CFrame.new(-193.2178955078125, 23.01263999938965, 2959.273681640625) * CFrame.Angles(0, -0, -0)
+                u2 = CFrame.new(-193.9064178466797, 23.01263999938965, 2961.307373046875) * CFrame.Angles(0, -0, -0)
+                u3 = CFrame.new(-195.5329132080078, 23.01263999938965, 2958.85205078125) * CFrame.Angles(0, -0, -0)
+                u4 = CFrame.new(-196.47361755371094, 23.01263999938965, 2961.348388671875) * CFrame.Angles(0, -0, -0)},
+            u6 = {
+                CFrame.new(-193.25323486328125, 27.207609176635742, 2957.080322265625) * CFrame.Angles(0, -0, -0)
+                CFrame.new(-191.33612060546875, 27.207609176635742, 2956.458740234375) * CFrame.Angles(0, -0, -0)
+                CFrame.new(-189.900390625, 27.207609176635742, 2955.205322265625) * CFrame.Angles(0, -0, -0)
+                CFrame.new(-188.2447052001953, 27.207609176635742, 2954.1806640625) * CFrame.Angles(0, -0, -0)
+                CFrame.new(-191.97756958007812, 27.207609176635742, 2954.621337890625) * CFrame.Angles(0, -0, -0)},
+        }
+
+        
+    }
+    return UnitPos[map][unit][pos]
 end
 
 function AA.Codes()
