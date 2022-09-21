@@ -11,44 +11,76 @@ function AA.Whitelist()
 end
 
 function AA.GetMaps()
-    return {
-        "Dragon Ball Z",
-        "Tokyo Ghoul",
-        "Bleach",
-        "Hunter x Hunter"
-    }
+    local v = {}
+    for id, names in pairs(Maps()) do
+        table.insert(v, names)
+    end
+    return v
 end
 function AA.GetMapName(mapId)
-    local m;
-    if mapId == "namek" then
-        m = "Dragon Ball Z"
-    elseif mapId == "tokyoghoul" then
-        m = "Tokyo Ghoul"
-    elseif mapId == "hueco" then
-        m = "Bleach"
-    elseif mapId == "hxhant" then
-        m = "Hunter x Hunter"
-    end
-    return m
+    table.foreach(Maps(), function(i, v)
+        if mapId == i then
+            return v
+        end
+    end)
 end
 function AA.GetMapID(mapName)
-    local m;
-    if mapName == "Dragon Ball Z" then
-        m = "namek"
-    elseif mapName == "Tokyo Ghoul" then
-        m = "tokyoghoul"
-    elseif mapName == "Bleach" then
-        m = "hueco"
-    elseif mapName == "Hunter x Hunter" then
-        m = "hxhant"
-    end
-    return m
+    table.foreach(Maps(), function(i, v)
+        if mapName == v then
+            return i
+        end
+    end)
+end
+local function Maps()
+    return {
+        hxhant = "Hunter x Hunter",
+        hueco = "Bleach",
+        tokyoghoul = "Tokyo Ghoul",
+        namek = "Namek"
+    }
 end
 
 function AA.PlaceUnits()
     pcall(function()
         local wave = game:GetService("Workspace")["_wave_num"].Value
-        if _G.Config.Map == "hxhant" then
+        if _G.Config.Map == "newmap" then
+            if wave < 3 then
+                local uID =  string.split(_G.Config.Units["u1"], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u1", i))
+                end
+            end
+            if wave < 3 then
+                local uID =  string.split(_G.Config.Units["u2"], " ")
+                for i = 1, 3 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u2", i))
+                end
+            end
+            if wave > 2 and wave < 6 then
+                local uID =  string.split(_G.Config.Units["u3"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u3", i))
+                end
+            end
+            if wave > 6 and wave < 16 then
+                local uID =  string.split(_G.Config.Units["u4"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u4", i))
+                end
+            end
+            if wave > 10 and wave < 20 then
+                local uID =  string.split(_G.Config.Units["u5"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u5", i))
+                end
+            end
+            if wave > 10 and wave < 20 then
+                local uID =  string.split(_G.Config.Units["u6"], " ")  
+                for i = 1, 5 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Map, "u6", i))
+                end
+            end
+        elseif _G.Config.Map == "hxhant" then
             if wave < 3 then
                 local uID =  string.split(_G.Config.Units["u1"], " ")
                 for i = 1, 1 do
@@ -155,12 +187,7 @@ function AA.PlaceUnits()
         end
     end)
 end
-function PlaceToLoc(unitId, loc)
-    if wave < _G.Config.WaveToLose then
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, loc)
-    end
-end
-function UnitPos(map, unit, pos)
+local function UnitPos(map, unit, pos)
     local UnitPos = {
         ["hxhant"] = {
             u1 = {
@@ -273,6 +300,11 @@ function UnitPos(map, unit, pos)
         }
     }
     return UnitPos[map][unit][pos]
+end
+local function PlaceToLoc(unitId, loc)
+    if game:GetService("Workspace")["_wave_num"].Value < _G.Config.WaveToLose then
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, loc)
+    end
 end
 
 function AA.Codes()
