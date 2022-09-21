@@ -309,6 +309,7 @@ end
 
 function AA.Codes()
     return {
+        "FAIRY",
         "HUNTER",
         "QUESTFIX",
         "HOLLOW",
