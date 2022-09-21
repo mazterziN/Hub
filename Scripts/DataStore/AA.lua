@@ -13,7 +13,7 @@ end
 function AA.GetMaps()
     local t = {}
     for id, names in pairs(GetAllMaps()) do
-        table.insert(v, names)
+        table.insert(t, names)
     end
     return t
 end
