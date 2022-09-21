@@ -19,8 +19,4 @@ elseif game.PlaceId == 8304191830 or game.PlaceId == 8349889591 then
 -- ONE PUNCH FIGHTERS
 elseif game.PlaceId == 10524502174 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/OnePunchFighters.lua"))()
-
--- GENERAL
-else
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/General.lua"))()
 end
