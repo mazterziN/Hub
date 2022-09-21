@@ -11,11 +11,11 @@ function AA.Whitelist()
 end
 
 function AA.GetMaps()
-    local v = {}
-    for id, names in pairs(Maps()) do
+    local t = {}
+    for id, names in pairs(GetAllMaps()) do
         table.insert(v, names)
     end
-    return v
+    return t
 end
 function AA.GetMapName(mapId)
     table.foreach(Maps(), function(i, v)
