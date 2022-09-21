@@ -18,14 +18,14 @@ function AA.GetMaps()
     return t
 end
 function AA.GetMapName(mapId)
-    table.foreach(Maps(), function(i, v)
+    table.foreach(GetAllMaps(), function(i, v)
         if mapId == i then
             return v
         end
     end)
 end
 function AA.GetMapID(mapName)
-    table.foreach(Maps(), function(i, v)
+    table.foreach(GetAllMaps(), function(i, v)
         if mapName == v then
             return i
         end
