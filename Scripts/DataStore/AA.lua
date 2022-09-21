@@ -31,7 +31,7 @@ function AA.GetMapID(mapName)
         end
     end)
 end
-local function Maps()
+function GetAllMaps()
     return {
         hxhant = "Hunter x Hunter",
         hueco = "Bleach",
@@ -187,7 +187,7 @@ function AA.PlaceUnits()
         end
     end)
 end
-local function UnitPos(map, unit, pos)
+function UnitPos(map, unit, pos)
     local UnitPos = {
         ["hxhant"] = {
             u1 = {
@@ -301,7 +301,7 @@ local function UnitPos(map, unit, pos)
     }
     return UnitPos[map][unit][pos]
 end
-local function PlaceToLoc(unitId, loc)
+function PlaceToLoc(unitId, loc)
     if game:GetService("Workspace")["_wave_num"].Value < _G.Config.WaveToLose then
         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, loc)
     end
