@@ -1,7 +1,7 @@
 local AA = {}
 
 function AA.Version()
-    return 5.1
+    return 5
 end
 function AA.Whitelist()
     return {
@@ -12,28 +12,7 @@ function AA.Whitelist()
         2427591310 -- NINJA
     }
 end
-function AA.GetMaps()
-    local t = {}
-    for id, names in pairs(GetAllMaps()) do
-        table.insert(t, names)
-    end
-    return t
-end
-function AA.GetMapName(mapId)
-    for id, name in pairs(GetAllMaps()) do
-        if id == mapId then
-            return name
-        end
-    end
-end
-function AA.GetMapID(mapName)
-    for id, name in pairs(GetAllMaps()) do
-        if name == mapName then
-            return id
-        end
-    end
-end
-function GetAllMaps()
+function AA.GetAllMaps()
     return {
         magnolia = "Fairy Tail",
         hxhant = "Hunter x Hunter",
@@ -43,10 +22,10 @@ function GetAllMaps()
     }
 end
 
-function AA.PlaceUnits(v)
+function AA.PlaceUnits(option)
     pcall(function()
         local wave = game:GetService("Workspace")["_wave_num"].Value
-        if v == "inf" then
+        if option == "inf" then
             if _G.Config.Inf.Map == "magnolia" then
                 if wave < 3 then
                     local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
