@@ -1,7 +1,7 @@
 local AA = {}
 
 function AA.Version()
-    return 5
+    return 5.1
 end
 function AA.Whitelist()
     return {
@@ -23,153 +23,151 @@ function AA.GetAllMaps()
 end
 
 function AA.PlaceUnits(option)
-    pcall(function()
-        local wave = game:GetService("Workspace")["_wave_num"].Value
-        if option == "inf" then
-            if _G.Config.Inf.Map == "magnolia" then
-                if wave < 3 then
-                    local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
-                    for i = 1, 1 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u1", i))
-                    end
+    local wave = game:GetService("Workspace")["_wave_num"].Value
+    if option == "inf" then
+        if _G.Config.Inf.Map == "magnolia" then
+            if wave < 3 then
+                local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u1", i))
                 end
-                if wave < 3 then
-                    local uID =  string.split(_G.Config.Inf.Units["u2"], " ")
-                    for i = 1, 3 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u2", i))
-                    end
+            end
+            if wave < 3 then
+                local uID =  string.split(_G.Config.Inf.Units["u2"], " ")
+                for i = 1, 3 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u2", i))
                 end
-                if wave > 2 and wave < 6 then
-                    local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
-                    for i = 1, 4 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
-                    end
+            end
+            if wave > 2 and wave < 6 then
+                local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
                 end
-                if wave > 6 and wave < 16 then
-                    local uID =  string.split(_G.Config.Inf.Units["u4"], " ")
-                    for i = 1, 4 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u4", i))
-                    end
+            end
+            if wave > 6 and wave < 16 then
+                local uID =  string.split(_G.Config.Inf.Units["u4"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u4", i))
                 end
-                if wave > 10 and wave < 20 then
-                    local uID =  string.split(_G.Config.Inf.Units["u5"], " ")
-                    for i = 1, 4 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u5", i))
-                    end
+            end
+            if wave > 10 and wave < 20 then
+                local uID =  string.split(_G.Config.Inf.Units["u5"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u5", i))
                 end
-                if wave > 10 and wave < 20 then
-                    local uID =  string.split(_G.Config.Inf.Units["u6"], " ")  
-                    for i = 1, 5 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u6", i))
-                    end
+            end
+            if wave > 10 and wave < 20 then
+                local uID =  string.split(_G.Config.Inf.Units["u6"], " ")  
+                for i = 1, 5 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u6", i))
                 end
-            elseif _G.Config.Inf.Map == "hxhant" then
-                if wave < 3 then
-                    local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
-                    for i = 1, 1 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u1", i))
-                    end
+            end
+        elseif _G.Config.Inf.Map == "hxhant" then
+            if wave < 3 then
+                local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u1", i))
                 end
-                if wave < 3 then
-                    local uID =  string.split(_G.Config.Inf.Units["u2"], " ")
-                    for i = 1, 3 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u2", i))
-                    end
+            end
+            if wave < 3 then
+                local uID =  string.split(_G.Config.Inf.Units["u2"], " ")
+                for i = 1, 3 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u2", i))
                 end
-                if wave > 2 and wave < 6 then
-                    local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
-                    for i = 1, 4 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
-                    end
+            end
+            if wave > 2 and wave < 6 then
+                local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
                 end
-                if wave > 6 and wave < 16 then
-                    local uID =  string.split(_G.Config.Inf.Units["u4"], " ")
-                    for i = 1, 4 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u4", i))
-                    end
+            end
+            if wave > 6 and wave < 16 then
+                local uID =  string.split(_G.Config.Inf.Units["u4"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u4", i))
                 end
-                if wave > 10 and wave < 20 then
-                    local uID =  string.split(_G.Config.Inf.Units["u5"], " ")
-                    for i = 1, 4 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u5", i))
-                    end
+            end
+            if wave > 10 and wave < 20 then
+                local uID =  string.split(_G.Config.Inf.Units["u5"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u5", i))
                 end
-                if wave > 10 and wave < 20 then
-                    local uID =  string.split(_G.Config.Inf.Units["u6"], " ")  
-                    for i = 1, 5 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u6", i))
-                    end
+            end
+            if wave > 10 and wave < 20 then
+                local uID =  string.split(_G.Config.Inf.Units["u6"], " ")  
+                for i = 1, 5 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u6", i))
                 end
-            elseif _G.Config.Inf.Map == "hueco" then
-                if wave < 3 then
-                    local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
-                    for i = 1, 1 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u1", i))
-                    end
+            end
+        elseif _G.Config.Inf.Map == "hueco" then
+            if wave < 3 then
+                local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u1", i))
                 end
-                if wave < 3 then
-                    local uID =  string.split(_G.Config.Inf.Units["u2"], " ")
-                    for i = 1, 3 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u2", i))
-                    end
+            end
+            if wave < 3 then
+                local uID =  string.split(_G.Config.Inf.Units["u2"], " ")
+                for i = 1, 3 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u2", i))
                 end
-                if wave > 2 and wave < 6 then
-                    local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
-                    for i = 1, 4 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
-                    end
+            end
+            if wave > 2 and wave < 6 then
+                local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
                 end
-                if wave > 8 and wave < 12 then
-                    local uID =  string.split(_G.Config.Inf.Units["u4"], " ")
-                    for i = 1, 4 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u4", i))
-                    end
+            end
+            if wave > 8 and wave < 12 then
+                local uID =  string.split(_G.Config.Inf.Units["u4"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u4", i))
                 end
-            elseif _G.Config.Inf.Map == "tokyoghoul" then
-                if wave < 3 then
-                    uN = "u1"
-                    local uID =  string.split(_G.Config.Inf.Units[uN], " ")
-                    for i = 1, 1 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
-                    end
+            end
+        elseif _G.Config.Inf.Map == "tokyoghoul" then
+            if wave < 3 then
+                uN = "u1"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
                 end
-                if wave < 3 then
-                    local uID =  string.split(_G.Config.Inf.Units["u2"], " ")
-                    for i = 1, 3 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u2", i))
-                    end
+            end
+            if wave < 3 then
+                local uID =  string.split(_G.Config.Inf.Units["u2"], " ")
+                for i = 1, 3 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u2", i))
                 end
-                if wave > 2 and wave < 6 then
-                    local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
-                    for i = 1, 4 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
-                    end
+            end
+            if wave > 2 and wave < 6 then
+                local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
                 end
-            elseif _G.Config.Inf.Map == "namek" then
-                if wave < 4 then
-                    uN = "u1"
-                    local uID =  string.split(_G.Config.Inf.Units[uN], " ")
-                    for i = 1, 1 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
-                    end
+            end
+        elseif _G.Config.Inf.Map == "namek" then
+            if wave < 4 then
+                uN = "u1"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
                 end
-                if wave < 4 then
-                    uN = "u2"
-                    local uID =  string.split(_G.Config.Inf.Units[uN], " ")
-                    for i = 1, 1 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
-                    end
+            end
+            if wave < 4 then
+                uN = "u2"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
                 end
-                if wave > 3 and wave < 7 then
-                    uN = "u3"
-                    local uID =  string.split(_G.Config.Inf.Units[uN], " ")
-                    for i = 1, 4 do
-                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
-                    end
+            end
+            if wave > 3 and wave < 7 then
+                uN = "u3"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
                 end
             end
         end
-    end)
+    end
 end
 function UnitPos(map, unit, pos)
     local UnitPos = {
