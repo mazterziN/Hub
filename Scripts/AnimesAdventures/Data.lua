@@ -1,5 +1,8 @@
 local AA = {}
 
+function AA.Version()
+    return 5.0
+end
 function AA.Whitelist()
     return {
         1340755305, -- MAZTER
@@ -9,7 +12,6 @@ function AA.Whitelist()
         2427591310 -- NINJA
     }
 end
-
 function AA.GetMaps()
     local t = {}
     for id, names in pairs(GetAllMaps()) do
