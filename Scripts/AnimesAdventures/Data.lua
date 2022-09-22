@@ -1,7 +1,7 @@
 local AA = {}
 
 function AA.Version()
-    return 5.0
+    return 5.1
 end
 function AA.Whitelist()
     return {
