@@ -319,7 +319,7 @@ function UnitPos(map, unit, pos)
     return UnitPos[map][unit][pos]
 end
 function PlaceToLoc(unitId, loc)
-    if game:GetService("Workspace")["_wave_num"].Value < _G.Config.WaveToLose then
+    if game:GetService("Workspace")["_wave_num"].Value < _G.Config.Inf.WaveToLose then
         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unitId, loc)
     end
 end
