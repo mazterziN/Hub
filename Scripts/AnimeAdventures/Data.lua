@@ -18,6 +18,7 @@ function AA.GetAllMaps()
         hxhant = "Hunter x Hunter",
         hueco = "Bleach",
         tokyoghoul = "Tokyo Ghoul",
+        marineford = "One Piece",
         namek = "Namek"
     }
 end
