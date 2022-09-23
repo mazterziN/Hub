@@ -382,7 +382,7 @@ function UnitPos(map, unit, pos)
         },
         ["tokyoghoul"] = {
             u1 = {
-                CFrame.new(-3016.866943359375, 58.58513259887695, -40.86863708496094)
+                CFrame.new(-3016, 58.58, -40)
             },
             u2 = {
                 CFrame.new(-3000, 58.58, -64),
