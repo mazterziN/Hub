@@ -9,7 +9,8 @@ function AA.Whitelist()
         1022210737, -- LUIPY
         1934778943, -- SHONEN
         113452795, -- MUDINHO
-        2427591310 -- NINJA
+        2427591310, -- NINJA
+        1554126 -- DOUGLAS
     }
 end
 function AA.GetAllMaps()
@@ -18,7 +19,7 @@ function AA.GetAllMaps()
         hxhant = "Hunter x Hunter",
         hueco = "Bleach",
         tokyoghoul = "Tokyo Ghoul",
-        marineford = "One Piece",
+        aot = "Attack On Titan",
         namek = "Namek"
     }
 end
@@ -143,6 +144,28 @@ function AA.PlaceUnits(option)
                 local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
                 for i = 1, 4 do
                     PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
+                end
+            end
+        elseif _G.Config.Inf.Map == "aot" then
+            if wave < 5 then
+                uN = "u1"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
+            if wave < 5 then
+                uN = "u2"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
+            if wave > 4 and wave < 10 then
+                uN = "u3"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
                 end
             end
         elseif _G.Config.Inf.Map == "namek" then
@@ -277,6 +300,23 @@ function UnitPos(map, unit, pos)
                 CFrame.new(-2997.430419921875, 58.58513641357422, -66.29708862304688),
                 CFrame.new(-2997.5947265625, 58.58513641357422, -63.99013900756836),
                 CFrame.new(-2997.591064453125, 58.58513641357422, -61.75052261352539)
+            }
+        },
+        ["aot"] = {
+            u1 = {
+                CFrame.new(-2988, 33.75, -618)
+            },
+            u2 = {
+                CFrame.new(-3024.8, 33.74, -684.15),
+                CFrame.new(-3025.8, 33.74, -684.15),
+                CFrame.new(-3026.8, 33.74, -684.15),
+                CFrame.new(-3027.8, 33.74, -684.15)
+            },
+            u3 = {
+                CFrame.new(-3024.8, 33.74, -685.15),
+                CFrame.new(-3025.8, 33.74, -685.15),
+                CFrame.new(-3026.8, 33.74, -685.15),
+                CFrame.new(-3027.8, 33.74, -685.15)
             }
         },
         ["namek"] = {
