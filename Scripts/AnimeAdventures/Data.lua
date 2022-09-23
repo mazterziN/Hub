@@ -146,6 +146,72 @@ function AA.PlaceUnits(option)
                     PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
                 end
             end
+        elseif _G.Config.Inf.Map == "marineford" then
+            if wave < 5 then
+                uN = "u1"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
+            if wave < 5 then
+                uN = "u2"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
+            if wave > 4 and wave < 10 then
+                uN = "u3"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
+        elseif _G.Config.Inf.Map == "naruto" then
+            if wave < 5 then
+                uN = "u1"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
+            if wave < 5 then
+                uN = "u2"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
+            if wave > 4 and wave < 10 then
+                uN = "u3"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
+        elseif _G.Config.Inf.Map == "demonslayer" then
+            if wave < 5 then
+                uN = "u1"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
+            if wave < 5 then
+                uN = "u2"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
+            if wave > 4 and wave < 10 then
+                uN = "u3"
+                local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                end
+            end
         elseif _G.Config.Inf.Map == "aot" then
             if wave < 5 then
                 uN = "u1"
@@ -157,7 +223,7 @@ function AA.PlaceUnits(option)
             if wave < 5 then
                 uN = "u2"
                 local uID =  string.split(_G.Config.Inf.Units[uN], " ")
-                for i = 1, 1 do
+                for i = 1, 4 do
                     PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
                 end
             end
@@ -300,6 +366,57 @@ function UnitPos(map, unit, pos)
                 CFrame.new(-2997.430419921875, 58.58513641357422, -66.29708862304688),
                 CFrame.new(-2997.5947265625, 58.58513641357422, -63.99013900756836),
                 CFrame.new(-2997.591064453125, 58.58513641357422, -61.75052261352539)
+            }
+        },
+        ["marineford"] = {
+            u1 = {
+                CFrame.new(-2590.36, 34.52, -36.98)
+            },
+            u2 = {
+                CFrame.new(-2528.2, 25.2, -35.7),
+                CFrame.new(-2529.2, 25.2, -35.7),
+                CFrame.new(-2530.2, 25.2, -35.7),
+                CFrame.new(-2531.2, 25.2, -35.7)
+            },
+            u3 = {
+                CFrame.new(-2528.2, 25.2, -36.7),
+                CFrame.new(-2529.2, 25.2, -36.7),
+                CFrame.new(-2530.2, 25.2, -36.7),
+                CFrame.new(-2531.2, 25.2, -36.7)
+            }
+        },
+        ["naruto"] = {
+            u1 = {
+                CFrame.new(-894.9, 29.5, 320.6)
+            },
+            u2 = {
+                CFrame.new(-885.36, 25.28, 336.15),
+                CFrame.new(-885.36, 25.28, 335.15),
+                CFrame.new(-885.36, 25.28, 334.15),
+                CFrame.new(-885.36, 25.28, 333.15)
+            },
+            u3 = {
+                CFrame.new(-886.36, 25.28, 336.15),
+                CFrame.new(-886.36, 25.28, 335.15),
+                CFrame.new(-886.36, 25.28, 334.15),
+                CFrame.new(-886.36, 25.28, 333.15)
+            }
+        },
+        ["demonslayer"] = {
+            u1 = {
+                CFrame.new(-2880.86, 34.34, -126.45)
+            },
+            u2 = {
+                CFrame.new(-2865.21, 34.34, -126.25),
+                CFrame.new(-2866.21, 34.34, -126.25),
+                CFrame.new(-2867.21, 34.34, -126.25),
+                CFrame.new(-2868.21, 34.34, -126.25)
+            },
+            u3 = {
+                CFrame.new(-2865.21, 34.34, -127.25),
+                CFrame.new(-2866.21, 34.34, -128.25),
+                CFrame.new(-2867.21, 34.34, -129.25),
+                CFrame.new(-2868.21, 34.34, -130.25)
             }
         },
         ["aot"] = {
