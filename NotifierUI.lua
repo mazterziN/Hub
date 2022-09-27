@@ -1,4 +1,4 @@
-local function Notify()
+
     _G.JxereasExistingHooks = _G.JxereasExistingHooks or {}
     if not _G.JxereasExistingHooks.GuiDetectionBypass then
         local CoreGui = game.CoreGui
@@ -831,5 +831,3 @@ local function Notify()
     scaleNotifHolderMaxNotifs()
     notifHolderListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(deleteNotifsOutsideFrame)
     return Notification
-end
-_G.Notify = Notify()
