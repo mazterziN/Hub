@@ -12,11 +12,11 @@ if game.PlaceId == 9049840490 then
 elseif game.PlaceId == 9136292138 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/GrandPirates.lua"))()
     
--- ANIME ADVENTURES
+--[[ ANIME ADVENTURES
 elseif game.PlaceId == 8304191830 or game.PlaceId == 8349889591 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/AnimeAdventures/Main.lua"))()
     
--- ONE PUNCH FIGHTERS
+]]-- ONE PUNCH FIGHTERS
 elseif game.PlaceId == 10524502174 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/OnePunchFighters.lua"))()
 end
