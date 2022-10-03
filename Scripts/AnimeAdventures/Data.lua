@@ -245,15 +245,22 @@ function DS.PlaceUnits(option)
                         PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
                     end
                 end
-                if wave < 4 then
+                if wave < 5 then
                     uN = "u2"
                     local uID =  string.split(_G.Config.Inf.Units[uN], " ")
-                    for i = 1, 1 do
+                    for i = 1, 4 do
                         PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
                     end
                 end
-                if wave > 3 and wave < 7 then
+                if wave > 4 and wave < 15 then
                     uN = "u3"
+                    local uID =  string.split(_G.Config.Inf.Units[uN], " ")
+                    for i = 1, 4 do
+                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
+                    end
+                end
+                if wave > 4 and wave < 15 then
+                    uN = "u4"
                     local uID =  string.split(_G.Config.Inf.Units[uN], " ")
                     for i = 1, 4 do
                         PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, uN, i))
