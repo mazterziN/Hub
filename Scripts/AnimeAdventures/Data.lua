@@ -513,25 +513,25 @@ function UnitPos(map, unit, pos)
         },
         ["namek"] = {
             u1 = {
-                CFrame.new(-2914, 91, -737)
+                CFrame.new(-2914, 92, -737)
             },
             u2 = {
-                CFrame.new(-2940, 91, -706),
-                CFrame.new(-2941, 91, -706),
-                CFrame.new(-2942, 91, -706),
-                CFrame.new(-2943, 91, -706)
+                CFrame.new(-2940, 92, -706),
+                CFrame.new(-2941, 92, -706),
+                CFrame.new(-2942, 92, -706),
+                CFrame.new(-2943, 92, -706)
             },
             u3 = {
-                CFrame.new(-2940, 91, -705),
-                CFrame.new(-2941, 91, -705),
-                CFrame.new(-2942, 91, -705),
-                CFrame.new(-2943, 91, -705)
+                CFrame.new(-2940, 92, -705),
+                CFrame.new(-2941, 92, -705),
+                CFrame.new(-2942, 92, -705),
+                CFrame.new(-2943, 92, -705)
             },
             u4 = {
-                CFrame.new(-2940, 91, -707),
-                CFrame.new(-2941, 91, -707),
-                CFrame.new(-2942, 91, -707),
-                CFrame.new(-2943, 91, -707)
+                CFrame.new(-2940, 92, -707),
+                CFrame.new(-2941, 92, -707),
+                CFrame.new(-2942, 92, -707),
+                CFrame.new(-2943, 92, -707)
             }
         }
     }
@@ -545,6 +545,7 @@ end
 
 function DS.Codes()
     return {
+        "ANDROID"
         "FAIRY2",
         "FAIRY",
         "subtomaokuma",
