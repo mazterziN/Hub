@@ -554,7 +554,6 @@ function DS.Codes()
         "SubToBlamspot",
         "FictioNTheFirst",
         "KingLuffy",
-        "Cursed",
         "noclypso"
     }
 end
