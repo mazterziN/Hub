@@ -14,7 +14,7 @@ if game.PlaceId == 8349889591 then
         end
         if wave < 5 then
             local uID = "{6cad356e-d7a7-417e-888b-ecb1a3c13f3f}"
-            for i = 1, 4 do
+            for i = 1, 3 do
                 PlaceToLoc(uID, UnitPos("u2", i))
             end
         end
@@ -51,8 +51,7 @@ if game.PlaceId == 8349889591 then
             u2 = {
                 CFrame.new(-619, 6.8, -809.2),
                 CFrame.new(-619.8, 6.8, -809.2),
-                CFrame.new(-620.6, 6.8, -809.2),
-                CFrame.new(-621.4, 6.8, -809.2)
+                CFrame.new(-620.6, 6.8, -809.2)
             },
             u3 = {
                 CFrame.new(-618.2, 6.8, -809.2),
