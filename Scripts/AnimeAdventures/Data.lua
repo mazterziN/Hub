@@ -1,6 +1,6 @@
 local DS = {}
 function DS.Version()
-    return "6.0.0"
+    return "6.0.2"
 end
 function DS.Whitelist()
     return {
@@ -334,6 +334,37 @@ function DS.PlaceUnits(option)
                 local uID =  string.split(_G.Config.Chg.Units["u5"], " ")
                 for i = 1, 4 do
                     PlaceToLoc(uID[3], UnitPos(_G.Config.Chg.CurrentMap, "u5", i))
+                end
+            end
+        elseif option == "infcastle" then
+            if wave < 4 then
+                local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.InfCastle.Map, "u1", i))
+                end
+            end
+            if wave < 15 then
+                local uID =  string.split(_G.Config.Inf.Units["u2"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.InfCastle.Map, "u2", i))
+                end
+            end
+            if wave < 15 then
+                local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.InfCastle.Map, "u3", i))
+                end
+            end
+            if wave > 5 and wave < 15 then
+                local uID =  string.split(_G.Config.Inf.Units["u4"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.InfCastle.Map, "u4", i))
+                end
+            end
+            if wave > 5 and wave < 15 then
+                local uID =  string.split(_G.Config.Inf.Units["u5"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.InfCastle.Map, "u5", i))
                 end
             end
         end
