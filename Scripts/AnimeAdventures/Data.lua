@@ -1,10 +1,10 @@
 local DS = {}
 function DS.Version()
-    return "5.5.9"
+    return "6.0.0"
 end
 function DS.Whitelist()
     return {
-        1340755305, 232422286, -- MAZTER
+        1340755305, -- MAZTER
         1022210737, -- LUIPY
         1934778943, -- SHONEN
         113452795, -- MUDINHO
@@ -14,6 +14,7 @@ function DS.Whitelist()
 end
 function DS.GetAllMaps()
     return {
+        {jjk = "Jujutsu Kaisen"},
         {magnolia = "Fairy Tail"},
         {hxhant = "Hunter x Hunter"},
         {hueco = "Bleach"},
@@ -22,7 +23,7 @@ function DS.GetAllMaps()
         {naruto = "Naruto"},
         {demonslayer = "Kimetsu no Yaiba"},
         {aot = "Attack On Titan"},
-        {namek = "Namek"}
+        {namek = "Dragon Ball Z"}
     }   
 end
 
@@ -30,7 +31,44 @@ function DS.PlaceUnits(option)
     local wave = game:GetService("Workspace")["_wave_num"].Value
     pcall(function()
         if option == "inf" then
-            if _G.Config.Inf.Map == "magnolia" then
+            if _G.Config.Inf.Map == "jjk" then
+                if wave < 3 then
+                    local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
+                    for i = 1, 1 do
+                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u1", i))
+                    end
+                end
+                if wave < 3 then
+                    local uID =  string.split(_G.Config.Inf.Units["u2"], " ")
+                    for i = 1, 3 do
+                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u2", i))
+                    end
+                end
+                if wave > 2 and wave < 6 then
+                    local uID =  string.split(_G.Config.Inf.Units["u3"], " ")
+                    for i = 1, 4 do
+                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u3", i))
+                    end
+                end
+                if wave > 6 and wave < 16 then
+                    local uID =  string.split(_G.Config.Inf.Units["u4"], " ")
+                    for i = 1, 4 do
+                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u4", i))
+                    end
+                end
+                if wave > 10 and wave < 20 then
+                    local uID =  string.split(_G.Config.Inf.Units["u5"], " ")
+                    for i = 1, 4 do
+                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u5", i))
+                    end
+                end
+                if wave > 10 and wave < 20 then
+                    local uID =  string.split(_G.Config.Inf.Units["u6"], " ")  
+                    for i = 1, 5 do
+                        PlaceToLoc(uID[3], UnitPos(_G.Config.Inf.Map, "u6", i))
+                    end
+                end
+            elseif _G.Config.Inf.Map == "magnolia" then
                 if wave < 3 then
                     local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
                     for i = 1, 1 do
@@ -303,6 +341,41 @@ function DS.PlaceUnits(option)
 end
 function UnitPos(map, unit, pos)
     local UnitPos = {
+        ["jjk"] = {
+            u1 = {
+                CFrame.new(378.5, 146, -78.5)
+            },
+            u2 = {
+                CFrame.new(406, 122, -60),
+                CFrame.new(406.8, 122, -60),
+                CFrame.new(407.6, 122, -60),
+                CFrame.new(408.4, 122, -60)
+            },
+            u3 = {
+                CFrame.new(406, 122, -61),
+                CFrame.new(406.8, 122, -61),
+                CFrame.new(407.6, 122, -61),
+                CFrame.new(408.4, 122, -61)
+            },
+            u4 = {
+                CFrame.new(406, 122, -59),
+                CFrame.new(406.8, 122, -59),
+                CFrame.new(407.6, 122, -59),
+                CFrame.new(408.4, 122, -59)
+            },
+            u5 = {
+                CFrame.new(406, 122, -62),
+                CFrame.new(406.8, 122, -62),
+                CFrame.new(407.6, 122, -62),
+                CFrame.new(408.4, 122, -62)
+            },
+            u6 = {
+                CFrame.new(406, 122, -58),
+                CFrame.new(406.8, 122, -58),
+                CFrame.new(407.6, 122, -58),
+                CFrame.new(408.4, 122, -58)
+            }
+        },
         ["magnolia"] = {
             u1 = {
                 CFrame.new(-598.0305786132812, 22.5, -830.3179321289062)
@@ -545,9 +618,7 @@ end
 
 function DS.Codes()
     return {
-        "ANDROID",
-        "FAIRY2",
-        "FAIRY",
+        "CURSE",
         "subtomaokuma",
         "TOADBOIGAMING",
         "SubToKelvingts",
