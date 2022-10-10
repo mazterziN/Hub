@@ -1,6 +1,6 @@
 local DS = {}
 function DS.Version()
-    return "6.0.2"
+    return "6.1.0"
 end
 function DS.Whitelist()
     return {
@@ -26,11 +26,59 @@ function DS.GetAllMaps()
         {namek = "Dragon Ball Z"}
     }   
 end
+function DS.GetTeleports()
+    return {
+        {["Play"] = game:GetService("Workspace")["_teleports"].play.CFrame},
+        {["Summon"] = game:GetService("Workspace")["_teleports"].summon.CFrame},
+        {["Challenge"] = game:GetService("Workspace")["_CHALLENGES"].shell.floor.CFrame},
+        {["Raid"] = game:GetService("Workspace")["_RAID"].shell.floor.CFrame},
+        {["Leaderboards"] = game:GetService("Workspace")["_LEADERBOARDS_"].shell.floor.CFrame},
+        {["Gojo Domain"] = game:GetService("Workspace")["_gojodomain"].entrance.CFrame},
+        {["Infinity Castle"] = game:GetService("Workspace")["_infinity_castle"].entrance.CFrame}
+    }
+end
 
 function DS.PlaceUnits(option)
     local wave = game:GetService("Workspace")["_wave_num"].Value
     pcall(function()
-        if option == "inf" then
+        if option == "story" then
+            if wave < 4 then
+                local uID =  string.split(_G.Config.Story.Units["u1"], " ")
+                for i = 1, 1 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Story.Map, "u1", i))
+                end
+            end
+            if wave < 15 then
+                local uID =  string.split(_G.Config.Story.Units["u2"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Story.Map, "u2", i))
+                end
+            end
+            if wave < 15 then
+                local uID =  string.split(_G.Config.Story.Units["u3"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Story.Map, "u3", i))
+                end
+            end
+            if wave > 5 and wave < 15 then
+                local uID =  string.split(_G.Config.Story.Units["u4"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Story.Map, "u4", i))
+                end
+            end
+            if wave > 5 and wave < 15 then
+                local uID =  string.split(_G.Config.Story.Units["u5"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Story.Map, "u5", i))
+                end
+            end
+            if wave > 5 and wave < 15 then
+                local uID =  string.split(_G.Config.Story.Units["u6"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Story.Map, "u6", i))
+                end
+            end
+        elseif option == "inf" then
             if _G.Config.Inf.Map == "jjk" then
                 if wave < 3 then
                     local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
@@ -336,6 +384,12 @@ function DS.PlaceUnits(option)
                     PlaceToLoc(uID[3], UnitPos(_G.Config.Chg.CurrentMap, "u5", i))
                 end
             end
+            if wave > 5 and wave < 15 then
+                local uID =  string.split(_G.Config.Chg.Units["u6"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.Chg.CurrentMap, "u6", i))
+                end
+            end
         elseif option == "infcastle" then
             if wave < 4 then
                 local uID =  string.split(_G.Config.Inf.Units["u1"], " ")
@@ -365,6 +419,12 @@ function DS.PlaceUnits(option)
                 local uID =  string.split(_G.Config.Inf.Units["u5"], " ")
                 for i = 1, 4 do
                     PlaceToLoc(uID[3], UnitPos(_G.Config.InfCastle.Map, "u5", i))
+                end
+            end
+            if wave > 5 and wave < 15 then
+                local uID =  string.split(_G.Config.Inf.Units["u6"], " ")
+                for i = 1, 4 do
+                    PlaceToLoc(uID[3], UnitPos(_G.Config.InfCastle.Map, "u6", i))
                 end
             end
         end
