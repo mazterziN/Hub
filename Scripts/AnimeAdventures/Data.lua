@@ -1,6 +1,6 @@
 local DS = {}
 function DS.Version()
-    return "6.1.0"
+    return "6.1.2"
 end
 function DS.Whitelist()
     return {
