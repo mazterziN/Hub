@@ -9,7 +9,8 @@ function DS.Whitelist()
         1934778943, -- SHONEN
         113452795, -- MUDINHO
         2427591310, -- NINJA
-        223770715 -- DOUGLAS
+        223770715, -- DOUGLAS
+        2238617765 -- FOX
     }
 end
 function DS.GetAllMaps()
