@@ -11,7 +11,8 @@ function DS.Whitelist()
         2427591310, -- NINJA
         223770715, -- DOUGLAS
         2238617765, -- FOX
-        3568641694 -- WESLEY
+        3568641694, -- LHYMODS
+        127184704 -- SENJU
     }
 end
 function DS.GetAllMaps()
