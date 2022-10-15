@@ -3,19 +3,19 @@ function DS.Version()
     return "6.1.2"
 end
 function DS.Whitelist()
-    return {
-        1340755305, -- MAZTER
-        1022210737, -- LUIPY
-        1934778943, -- SHONEN
-        113452795, -- MUDINHO
-        2427591310, -- NINJA
-        223770715, -- DOUGLAS
-        2238617765, -- FOX
-        3568641694, -- LHYMODS
-        127184704, -- SENJU
-        2771766988, -- SLOW
-        2504255348 -- DouglasNFT
-    }
+   return {
+            1340755305, -- Mazter
+            1022210737, -- Luipy
+            1934778943, -- Shonen
+            113452795, -- Mudinho
+            2427591310, -- Ninja
+            223770715, -- Douglas
+            2238617765, -- TheFox
+            3568641694, -- LhyMoDs
+            127184704, -- Senju
+            2771766988, -- Slow
+            2504255348 -- DouglasNFT
+   }
 end
 function DS.GetAllMaps()
     return {
