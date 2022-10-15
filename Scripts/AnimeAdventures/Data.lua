@@ -13,7 +13,8 @@ function DS.Whitelist()
         2238617765, -- FOX
         3568641694, -- LHYMODS
         127184704, -- SENJU
-        2771766988 -- SLOW
+        2771766988, -- SLOW
+        2504255348 -- DouglasNFT
     }
 end
 function DS.GetAllMaps()
