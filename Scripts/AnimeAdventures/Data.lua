@@ -9,7 +9,6 @@ function DS.Whitelist()
             1934778943, -- Shonen
             113452795, -- Mudinho
             2427591310, -- Ninja
-            223770715, -- Douglas
             2238617765, -- TheFox
             3568641694, -- LhyMoDs
             127184704, -- Senju
