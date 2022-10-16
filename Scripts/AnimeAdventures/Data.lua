@@ -1,7 +1,7 @@
     local DS = {}
 
     function DS.GetVersion()
-        return "6.5.0"
+        return "6.5.2"
     end
     function DS.GetAllMaps()
         return {
