@@ -14,9 +14,7 @@ elseif game.PlaceId == 9136292138 then
     
 -- ANIME ADVENTURES
 elseif game.PlaceId == 8304191830 or game.PlaceId == 8349889591 then
-    --loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/AnimeAdventures/Main.lua"))()
-    notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/NotifierUI.lua"))()
-    notify.new("error", "ERROR", "Script Under Maintenance...", true, 10)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mazterziN/Hub/main/Scripts/AnimeAdventures/Main.lua"))()
     
 -- ONE PUNCH FIGHTERS
 elseif game.PlaceId == 10524502174 then
