@@ -457,5 +457,4 @@ function DS.Codes()
     }
 end
 
-print("MAZTER HUB - Data Store loaded")
 return DS;
