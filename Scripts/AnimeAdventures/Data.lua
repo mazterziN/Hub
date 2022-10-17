@@ -440,7 +440,8 @@ function DS.Whitelist()
         127184704, -- Senju
         2771766988, -- Slow
         2504255348, -- DouglasNFT
-        3332872267 -- Lirous
+        3332872267, -- Lirous
+        3067509017 -- WesleyPC
     }
 end
 function DS.Codes()
