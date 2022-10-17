@@ -439,7 +439,8 @@ function DS.Whitelist()
         3568641694, -- LhyMoDs
         127184704, -- Senju
         2771766988, -- Slow
-        2504255348 -- DouglasNFT
+        2504255348, -- DouglasNFT
+        3332872267 -- Lirous
     }
 end
 function DS.Codes()
